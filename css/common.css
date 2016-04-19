@@ -1,0 +1,528 @@
+/*================================
+=         FONT's import         =
+================================*/
+@font-face {
+    font-family: 'vw_headbold';
+    src: url('fonts/vwhead-bold-webfont.eot');
+    src: url('fonts/vwhead-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/vwhead-bold-webfont.woff2') format('woff2'),
+         url('fonts/vwhead-bold-webfont.woff') format('woff'),
+         url('fonts/vwhead-bold-webfont.ttf') format('truetype'),
+         url('fonts/vwhead-bold-webfont.svg#vw_headbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'vw_headbold_italic';
+    src: url('fonts/vwhead-bolditalic-webfont.eot');
+    src: url('fonts/vwhead-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/vwhead-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/vwhead-bolditalic-webfont.woff') format('woff'),
+         url('fonts/vwhead-bolditalic-webfont.ttf') format('truetype'),
+         url('fonts/vwhead-bolditalic-webfont.svg#vw_headbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'vw_headextrabold';
+    src: url('fonts/vwhead-extrabold-webfont.eot');
+    src: url('fonts/vwhead-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/vwhead-extrabold-webfont.woff2') format('woff2'),
+         url('fonts/vwhead-extrabold-webfont.woff') format('woff'),
+         url('fonts/vwhead-extrabold-webfont.ttf') format('truetype'),
+         url('fonts/vwhead-extrabold-webfont.svg#vw_headextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'vw_headlight';
+    src: url('fonts/vwhead-light-webfont.eot');
+    src: url('fonts/vwhead-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/vwhead-light-webfont.woff2') format('woff2'),
+         url('fonts/vwhead-light-webfont.woff') format('woff'),
+         url('fonts/vwhead-light-webfont.ttf') format('truetype'),
+         url('fonts/vwhead-light-webfont.svg#vw_headlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'vw_headregular';
+    src: url('fonts/vwhead-regular-webfont.eot');
+    src: url('fonts/vwhead-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/vwhead-regular-webfont.woff2') format('woff2'),
+         url('fonts/vwhead-regular-webfont.woff') format('woff'),
+         url('fonts/vwhead-regular-webfont.ttf') format('truetype'),
+         url('fonts/vwhead-regular-webfont.svg#vw_headregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'vw_headregular_italic';
+    src: url('fonts/vwhead-regularitalic-webfont.eot');
+    src: url('fonts/vwhead-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/vwhead-regularitalic-webfont.woff2') format('woff2'),
+         url('fonts/vwhead-regularitalic-webfont.woff') format('woff'),
+         url('fonts/vwhead-regularitalic-webfont.ttf') format('truetype'),
+         url('fonts/vwhead-regularitalic-webfont.svg#vw_headregular_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'vw_textbold';
+    src: url('fonts/vwtext-bold-webfont.eot');
+    src: url('fonts/vwtext-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/vwtext-bold-webfont.woff2') format('woff2'),
+         url('fonts/vwtext-bold-webfont.woff') format('woff'),
+         url('fonts/vwtext-bold-webfont.ttf') format('truetype'),
+         url('fonts/vwtext-bold-webfont.svg#vw_textbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'vw_textbold_italic';
+    src: url('fonts/vwtext-bolditalic-webfont.eot');
+    src: url('fonts/vwtext-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/vwtext-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/vwtext-bolditalic-webfont.woff') format('woff'),
+         url('fonts/vwtext-bolditalic-webfont.ttf') format('truetype'),
+         url('fonts/vwtext-bolditalic-webfont.svg#vw_textbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'vw_textlight';
+    src: url('fonts/vwtext-light-webfont.eot');
+    src: url('fonts/vwtext-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/vwtext-light-webfont.woff2') format('woff2'),
+         url('fonts/vwtext-light-webfont.woff') format('woff'),
+         url('fonts/vwtext-light-webfont.ttf') format('truetype'),
+         url('fonts/vwtext-light-webfont.svg#vw_textlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'vw_textregular';
+    src: url('fonts/vwtext-regular-webfont.eot');
+    src: url('fonts/vwtext-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/vwtext-regular-webfont.woff2') format('woff2'),
+         url('fonts/vwtext-regular-webfont.woff') format('woff'),
+         url('fonts/vwtext-regular-webfont.ttf') format('truetype'),
+         url('fonts/vwtext-regular-webfont.svg#vw_textregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'vw_textregular_italic';
+    src: url('fonts/vwtext-regularitalic-webfont.eot');
+    src: url('fonts/vwtext-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/vwtext-regularitalic-webfont.woff2') format('woff2'),
+         url('fonts/vwtext-regularitalic-webfont.woff') format('woff'),
+         url('fonts/vwtext-regularitalic-webfont.ttf') format('truetype'),
+         url('fonts/vwtext-regularitalic-webfont.svg#vw_textregular_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Fabio main classes*/
+/* classes */
+.full{ width: 100% }
+.center{ text-align: center }
+.right{ position:absolute;right:0; }
+.inline{ display: inline-block }
+
+.upper{ text-transform: uppercase }
+.spaced{ letter-spacing: 4px }
+
+.blue{ color: #00a3e2 }
+.gray{ color: #232323 }
+
+.head_bold{ font-family: 'vw_headbold', Arial, Verdana, sans-serif }
+.text_light{ font-family: 'vw_textlight', Arial, Verdana, sans-serif }
+.text_regular{ font-family: 'vw_textregular', Arial, Verdana, sans-serif }
+.text_bold{ font-family: 'vw_textbold', Arial, Verdana, sans-serif }
+
+.small{ font-size: 16px }
+.medium{ font-size: 20px }
+.big{ font-size: 25px }
+
+.hidden{ display: none !important }
+
+.head_extrabold{ font-family: 'vw_headextrabold', Arial, Verdana, sans-serif }
+
+/*Fabio main classes*/
+
+html,body{
+	background-color: #000;
+	margin: 0;
+	padding: 0;
+	overflow-y: hidden;
+	color:#fff;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	font-family: 'vw_textregular', Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 16px;
+}
+
+.hide{opacity:0;}
+.basic-icon{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background-image: url('../img/tiles.png'); 
+    background-size: 1000% 1000%;
+}
+body div{
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently */
+}
+
+/*================================
+=           CABEÇALHO            =
+================================*/
+/*Default*/
+.main-header{
+	position:absolute;
+	min-height: 100px;
+	min-width: 500px;
+	width:100%;
+	background-color: #fff;
+	opacity: 0;
+	z-index: 2;
+}
+.content-header{
+	max-width:1280px;
+	margin:auto;
+}
+.vw-logo{
+	position: relative;
+	float:left;
+	background-size: 1000% 1000%;
+	left:30px;
+	top:18px;
+	width: 64px;
+	height: 64px;
+}
+
+.vwCarName{
+	position:relative;
+	float:right;
+	right:30px;
+	font-family: 'vw_headextrabold';
+	top:39px;
+	color:#000;
+}
+.vwCarName p{margin: 0;font-size: 18px;}
+.main-content{
+    position: absolute;
+    width: 100%;  
+    min-width: 500px;
+    min-height: 600px;
+    bottom: 0px;
+    overflow: hidden;
+    z-index: 0;
+    top:230px;
+}
+
+body.show-footer .footer{
+    min-height: 50px;
+}
+
+/*controle de altura*/
+@media screen and (max-height: 700px){
+    .main-header{min-height: 50px;}
+    .content-header{min-height: 50px;}
+    .vw-logo{
+        top:9px;
+        width: 32px;
+        height: 32px;
+    }
+    .vwCarName{top:17px;}
+    .vwCarName p{font-size: 14px;}
+    .main-content{top:180px;}
+}
+
+/*Medium*/
+@media screen and (min-width: 960px) and (max-width: 1280px){
+    .main-content{top:210px;}
+}
+
+/*controle de altura para medium*/
+@media screen and (max-height: 700px) and (min-width: 960px) and (max-width: 1280px){
+    .main-content{top:160px;}
+}
+
+/*Small*/
+@media screen and (max-width: 960px){
+	.main-header{min-height: 50px;}
+	.content-header{min-height: 50px;}
+	.vw-logo{
+		top:9px;
+		width: 32px;
+		height: 32px;
+	}
+	.vwCarName{top:17px;}
+	.vwCarName p{font-size: 14px;}
+	.main-content{top:148px;}
+}
+/*Mobiles*/
+@media screen and (max-device-width: 500px){
+    .main-header{width:980px;}
+    .content-header{width:980px;}
+}
+/*Mobile portrait*/
+@media screen and (orientation:portrait) and (max-device-width: 500px){
+	.main-header{min-height: 150px;}
+	.content-header{min-height: 150px;}
+	.vw-logo{
+		top:28px;
+		width: 96px;
+		height: 96px;
+	}
+	.vwCarName{top:57px;}
+	.vwCarName p{font-size: 32px;}
+	.main-content{top:150px;}
+}
+/*Mobile landscape*/
+@media screen and (orientation:landscape) and (max-device-width: 500px){
+	.main-header{min-height: 65px;}
+	.content-header{min-height: 65px;}
+	.vw-logo{
+		top:8px;
+		width: 48px;
+		height: 48px;
+	}
+	.vwCarName{top:17px;}
+	.vwCarName p{font-size: 18px;}
+	.main-content{top:65px;min-height: 0px;}
+}
+
+/*================================
+=            CONTENT             =
+================================*/
+/*Default*/
+.slide{
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sub-slide{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+}
+.slide1{top:0%;opacity: 0;}
+.slide3{background-color: #000;}
+
+
+
+/*Medium*/
+@media screen and (min-width: 960px) and (max-width: 1280px){
+    .sub-slide{top:0px;}
+}
+/*Small*/
+@media screen and (max-width: 960px){
+    .sub-slide{top:0px;}
+}
+
+/*Mobiles*/
+@media screen and (max-device-width: 500px){
+    .sub-slide{width:980px;}
+}
+/*Mobile landscape*/
+@media screen and (orientation:landscape) and (max-device-width: 500px){
+    .sub-slide{top:0px;}
+}
+
+/*Mobile portrait*/
+@media screen and (orientation:portrait) and (max-device-width: 500px){
+    .sub-slide{top:140px;}
+}
+
+
+
+
+/*================================
+=             LOAD               =
+================================*/
+
+.load{
+	background-color: rgba(0,0,0,1);
+	position: fixed;
+	top:0px;
+	width: 100%;
+	height: 100%;
+	/*opacity: 0;
+	display: none;*/
+    visibility: visible;
+    opacity:1;
+	z-index: 1;
+}
+
+.load-transition{
+  -webkit-transition: visibility 500ms, opacity 500ms linear;
+   -moz-transition: visibility 500ms, opacity 500ms linear;
+     -o-transition: visibility 500ms, opacity 500ms linear;
+        transition: visibility 500ms, opacity 500ms linear;
+}
+
+.hide-load{
+    visibility: hidden;
+    opacity:0;
+}
+
+
+.load-gear{
+  position: absolute;
+  margin-left: 50vw;
+  margin-top: 50vh;
+  top:-30px;
+  left:-30px;
+  width: 60px;
+  height: 60px;
+  animation: spin 5s infinite;
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes spin {
+  50% {
+    transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	   -moz-transform: rotate(360deg);
+	    -ms-transform: rotate(360deg);
+	     -o-transform: rotate(360deg);
+			transform: rotate(360deg);
+  }
+}
+
+
+
+
+.rotational{
+	position: absolute;
+	top:10%;
+	width: 100%;
+	height: 300%;
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 66%;
+}
+.rotational div{
+	position: absolute;
+	background-color: #000;
+	width: 100%;
+	height: 66%;
+	text-align: center;
+}
+.black_car{
+	background-position: center;
+	background-repeat:  no-repeat;
+	background-size: 200%;
+}
+.blue_car{
+	background-position: center;
+	background-repeat:  no-repeat;
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    background-size: 500%;
+}
+
+.home{
+	opacity: 0;
+	top:0%;
+}
+.cars-home{
+    top:0%;
+}
+.home-content{
+    position: absolute;
+    left: -640px;
+    overflow: hidden;
+    width: 1280px;
+    height: 100%;
+    margin-left: 50%;
+}
+.premios_button{
+    position: absolute;
+    background-position: 100% 25%;
+    background-size: 500% 500%;
+    left:0px;
+    bottom:50px;
+    width: 128px;
+    height: 128px;
+    cursor: pointer;
+}
+.home-content .car-button{
+    position: absolute;
+    top: 75%;
+    width: 180px;
+    height: 54px;
+    cursor: pointer;
+}
+.home-content .car-button .plus{
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    background-image: url('../img/tiles.png');
+    background-position: -900% 0;
+    background-size: 1000% 1000%;
+}
+.home-content .car-button .bar{
+    position: absolute;
+    border-bottom: 2px solid #00a3e2;
+}
+.home-content .car-button .texto{
+    font-family: 'vw_headbold';
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    left: 53px;
+    letter-spacing: 1px;
+}
+.home-content .robust-button{left:0px;}
+.home-content .cross-button{right:0px;}
+.home-content .robust-button .plus{left:0px;}
+.home-content .cross-button .plus{right:0px;}
+.home-content .robust-button .bar{top:26px;left:48px;width:120px;}
+.home-content .cross-button .bar{top:26px;left:19px;width:112px;}
+.home-content .robust-button .texto{left:53px;top:10px;}
+.home-content .cross-button .texto{left:22px;top:10px;}
+
+/*Medium*/
+@media screen and (min-width: 960px) and (max-width: 1280px){
+    .home-content{
+        left: -480px;
+        width: 960px;
+    }
+}
+/*Small*/
+@media screen and (max-width: 960px){
+    .home-content{
+        left: -250px;
+        width: 500px;
+    }
+}
+
+
+/*Mobile portrait*/
+@media screen and (orientation:portrait) and (max-device-width: 500px){
+  .premios_button{display:none;}
+}
+
+/*Mobile landscape*/
+@media screen and (orientation:landscape) and (max-device-width: 500px){
+  .premios_button{display:none;}
+}

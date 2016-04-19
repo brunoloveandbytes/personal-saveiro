@@ -1,0 +1,230 @@
+.tour_interno_container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-width: 500px;
+  overflow: hidden;
+}
+
+.tour_interno_container .close{
+  position: absolute;
+  z-index: 5;
+  font-size: 40px;
+  background-color: #f00;
+  cursor: pointer;
+  right: 0px;
+}
+
+
+.tour_interno {
+  width:2500px;
+  height:2500px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-top:-1250px;
+  margin-left:-1250px;
+  z-index:5;
+  overflow:hidden;
+  -webkit-perspective: 1250px;
+   -moz-perspective: 1250px;
+     -o-perspective: 1250px;
+      perspective: 1250px;
+}
+
+.cube {
+  width:100%;
+  height:100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+   -moz-transform-style: preserve-3d;
+     -o-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+  -webkit-transform: translate3d(0px,0px,1250px) rotateY(0deg);
+   -moz-transform: translate3d(0px,0px,1250px) rotateY(0deg);
+     -o-transform: translate3d(0px,0px,1250px) rotateY(0deg);
+      transform: translate3d(0px,0px,1250px) rotateY(0deg);
+}
+
+.cube div {
+  display: block;
+  position: absolute;
+  width:100%;
+  height:100%;
+  background-size: 100% 100%;
+  -webkit-backface-visibility: hidden;
+   -moz-backface-visibility: hidden;
+     -o-backface-visibility: hidden;
+      backface-visibility: hidden;
+}
+
+.cube .back  {
+  background-image:url('../img/back.jpg');
+  -webkit-transform: rotateY(180deg) translateZ( -1249px );
+   -moz-transform: rotateY(180deg) translateZ( -1249px );
+     -o-transform: rotateY(180deg) translateZ( -1249px );
+      transform: rotateY(180deg) translateZ( -1249px );
+}
+.cube .front   {
+  background-image:url('../img/front.jpg');
+  -webkit-transform: translateZ( -1249px );
+   -moz-transform: translateZ( -1249px );
+     -o-transform: translateZ( -1249px );
+      transform: translateZ( -1249px );
+}
+.cube .right {
+  background-image:url('../img/right.jpg');
+  -webkit-transform: rotateY( -90deg ) translateZ(-1249px);
+   -moz-transform: rotateY( -90deg ) translateZ(-1249px);
+     -o-transform: rotateY( -90deg ) translateZ(-1249px);
+      transform: rotateY( -90deg ) translateZ(-1249px);
+}
+.cube .left {
+  background-image:url('../img/left.jpg');
+  -webkit-transform: rotateY(  90deg ) translateZ( -1249px );
+   -moz-transform: rotateY(  90deg ) translateZ( -1249px );
+     -o-transform: rotateY(  90deg ) translateZ( -1249px );
+      transform: rotateY(  90deg ) translateZ( -1249px );
+}
+.cube .top {
+  background-image:url('../img/top.jpg');
+  -webkit-transform: rotateX( -90deg ) translateZ( -1249px );
+   -moz-transform: rotateX( -90deg ) translateZ( -1249px );
+     -o-transform: rotateX( -90deg ) translateZ( -1249px );
+      transform: rotateX( -90deg ) translateZ( -1249px );
+}
+.cube .bottom {
+  background-image:url('../img/down.jpg');
+  -webkit-transform: rotateX( 90deg ) translateZ( -1249px );
+   -moz-transform: rotateX( 90deg ) translateZ( -1249px );
+     -o-transform: rotateX( 90deg ) translateZ( -1249px );
+      transform: rotateX( 90deg ) translateZ( -1249px );
+}
+
+/*Large*/
+@media screen and (min-width: 1280px) and (max-width: 2000px){
+  .tour_interno {
+    width:2000px;
+    height:2000px;
+    
+    margin-top:-1000px;
+    margin-left:-1000px;
+    
+    -webkit-perspective: 1000px;
+     -moz-perspective: 1000px;
+       -o-perspective: 1000px;
+        perspective: 1000px;
+  }
+
+  .cube {
+    -webkit-transform: translate3d(0px,0px,1000px) rotateY(0deg);
+     -moz-transform: translate3d(0px,0px,1000px) rotateY(0deg);
+       -o-transform: translate3d(0px,0px,1000px) rotateY(0deg);
+        transform: translate3d(0px,0px,1000px) rotateY(0deg);
+  }
+
+  .cube .back  {
+    -webkit-transform: rotateY(180deg) translateZ( -999px );
+     -moz-transform: rotateY(180deg) translateZ( -999px );
+       -o-transform: rotateY(180deg) translateZ( -999px );
+        transform: rotateY(180deg) translateZ( -999px );
+  }
+  .cube .front   {
+    -webkit-transform: translateZ( -999px );
+     -moz-transform: translateZ( -999px );
+       -o-transform: translateZ( -999px );
+        transform: translateZ( -999px );
+  }
+  .cube .right {
+    -webkit-transform: rotateY( -90deg ) translateZ(-999px);
+     -moz-transform: rotateY( -90deg ) translateZ(-999px);
+       -o-transform: rotateY( -90deg ) translateZ(-999px);
+        transform: rotateY( -90deg ) translateZ(-999px);
+  }
+  .cube .left {
+    -webkit-transform: rotateY(  90deg ) translateZ( -999px );
+     -moz-transform: rotateY(  90deg ) translateZ( -999px );
+       -o-transform: rotateY(  90deg ) translateZ( -999px );
+        transform: rotateY(  90deg ) translateZ( -999px );
+  }
+  .cube .top {
+    -webkit-transform: rotateX( -90deg ) translateZ( -999px );
+     -moz-transform: rotateX( -90deg ) translateZ( -999px );
+       -o-transform: rotateX( -90deg ) translateZ( -999px );
+        transform: rotateX( -90deg ) translateZ( -999px );
+  }
+  .cube .bottom {
+    -webkit-transform: rotateX( 90deg ) translateZ( -999px );
+     -moz-transform: rotateX( 90deg ) translateZ( -999px );
+       -o-transform: rotateX( 90deg ) translateZ( -999px );
+        transform: rotateX( 90deg ) translateZ( -999px );
+  }
+}
+/*Small and Medium*/
+@media screen and (max-width: 1280px){
+
+  .tour_interno {
+    width:1280px;
+    height:1280px;
+    
+    margin-top:-640px;
+    margin-left:-640px;
+    
+    -webkit-perspective: 640px;
+     -moz-perspective: 640px;
+       -o-perspective: 640px;
+        perspective: 640px;
+  }
+
+  .cube {
+    -webkit-transform: translate3d(0px,0px,640px) rotateY(0deg);
+     -moz-transform: translate3d(0px,0px,640px) rotateY(0deg);
+       -o-transform: translate3d(0px,0px,640px) rotateY(0deg);
+        transform: translate3d(0px,0px,640px) rotateY(0deg);
+  }
+
+  .cube .back  {
+    -webkit-transform: rotateY(180deg) translateZ( -639px );
+     -moz-transform: rotateY(180deg) translateZ( -639px );
+       -o-transform: rotateY(180deg) translateZ( -639px );
+        transform: rotateY(180deg) translateZ( -639px );
+  }
+  .cube .front   {
+    -webkit-transform: translateZ( -639px );
+     -moz-transform: translateZ( -639px );
+       -o-transform: translateZ( -639px );
+        transform: translateZ( -639px );
+  }
+  .cube .right {
+    -webkit-transform: rotateY( -90deg ) translateZ(-639px);
+     -moz-transform: rotateY( -90deg ) translateZ(-639px);
+       -o-transform: rotateY( -90deg ) translateZ(-639px);
+        transform: rotateY( -90deg ) translateZ(-639px);
+  }
+  .cube .left {
+    -webkit-transform: rotateY(  90deg ) translateZ( -639px );
+     -moz-transform: rotateY(  90deg ) translateZ( -639px );
+       -o-transform: rotateY(  90deg ) translateZ( -639px );
+        transform: rotateY(  90deg ) translateZ( -639px );
+  }
+  .cube .top {
+    -webkit-transform: rotateX( -90deg ) translateZ( -639px );
+     -moz-transform: rotateX( -90deg ) translateZ( -639px );
+       -o-transform: rotateX( -90deg ) translateZ( -639px );
+        transform: rotateX( -90deg ) translateZ( -639px );
+  }
+  .cube .bottom {
+    -webkit-transform: rotateX( 90deg ) translateZ( -639px );
+     -moz-transform: rotateX( 90deg ) translateZ( -639px );
+       -o-transform: rotateX( 90deg ) translateZ( -639px );
+        transform: rotateX( 90deg ) translateZ( -639px );
+  }
+
+}
+/*Mobile portrait*/
+@media screen and (orientation:portrait) and (max-device-width: 500px){
+}
+/*Mobile landscape*/
+@media screen and (orientation:landscape) and (max-device-width: 500px){
+
+}

@@ -1,0 +1,103 @@
+.premios{background-image:url('../img/02_Identidade_01_Fundo_Volkswagen.jpg');}
+.premios_content{
+    position: absolute;
+    left: -640px;
+    overflow: hidden;
+    width: 1280px;
+    height: 100%;
+    margin-left: 50%;
+}
+.premios .title{
+    font-family: 'vw_headextrabold';
+    font-size: 50px;
+    position: absolute;
+    top: 40px;
+    left: 35px;
+    width: 100%;
+    height: 100px;
+}
+.premios .up-bar{position:absolute;top:0;width:100%;height:100px;}
+.premios .bar{position:absolute;top:100px;right:85px;left:41px;height:0;border-bottom:2px solid #fff;}
+.premios .back{
+    position: absolute;
+    top: 70px;
+    right: 27px;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    background-image: url('../img/tiles.png');
+    background-position: -500% -200%;
+    background-size: 1000% 1000%;
+}
+.premios .back-texto{position:absolute;right:42px;font-size:10px;top:56px;font-family:'vw_headregular';}
+.premios .sub-title{
+    font-family: 'vw_headbold';
+    position: absolute;
+    top: 135px;
+    left: 200px;
+    width: 880px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #00a4e3;
+}
+.premios .separation-bar{
+    position: absolute;
+    top: 210px;
+    left: -90px;
+    width: 180px;
+    margin-left: 50%;
+    border-bottom: 2px solid #fff;
+}
+.premios .super-container{position:absolute;width:1200px;left:40px;top:240px;bottom:100px;overflow-y:scroll;}
+.premios .container{position:relative;float:left;width:100%;height:300px;}
+.premios .container .separation-bar{top:290px;}
+.premios .container .left-image{position:absolute;left:0px;width:25%;height:100%;}
+.premios .container .tabela{position:absolute;right:5%;width:30%;height:100%;}
+.premios .container .texto{position:absolute;left:25%;width:35%;top:15%;bottom:0px;line-height:22px;}
+.premios .container .texto .main-title{font-family:'vw_textbold';font-size:18px;color:#00a4e3;}
+.premios .container .texto .source{font-family:'vw_textbold';font-size:16px;}
+.premios .left-image{background-repeat:no-repeat;background-position:center;}
+.premios .tabela{background-repeat:no-repeat;background-position:right;}
+.premios .premio-auto .left-image{background-image:url('../img/premios_auto_esporte.jpg');}
+.premios .premio-quatro .left-image{background-image:url('../img/premios_quatro_rodas.png');}
+.premios .premio-auto .tabela{background-image:url('../img/tabela_auto_esporte.png');}
+.premios .premio-quatro .tabela{background-image:url('../img/tabela_quatro_rodas.png');}
+
+/*Medium*/
+@media screen and (min-width: 960px) and (max-width: 1280px){
+  .premios_content{left:-480px;width:960px;}
+  .premios .sub-title{left:40px;width:880px;}
+  .premios .super-container{left:30px;width:900px;}
+  .premios .container{height:400px;}
+  .premios .container .separation-bar{top:390px;}
+  .premios .container .texto{left:30%;width:30%;}
+  .premios .tabela{background-size:contain;}
+}
+/*Small*/
+@media screen and (max-width: 960px){
+  .premios_content{left:-250px;width:500px;}
+  .premios .title{font-size:25px;top:60px;}
+  .premios .sub-title{left:50px;width:400px;}
+  .premios .super-container{left:0px;width:500px;}
+  .premios .container{height:400px;}
+  .premios .container .separation-bar{top:390px;}
+  .premios .container .texto{left:32%;width:65%;top:20%;}
+  .premios .tabela{display:none;}
+  .premios .left-image{background-size:contain;}
+}
+/*Mobile portrait and landscape*/
+@media screen and (max-device-width: 500px){
+
+}
+/*Mobile portrait*/
+@media screen and (orientation:portrait) and (max-device-width: 500px){
+
+}
+/*Mobile landscape*/
+@media screen and (orientation:landscape) and (max-device-width: 500px){
+
+}
+
+
+
+

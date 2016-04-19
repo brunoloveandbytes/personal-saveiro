@@ -1,0 +1,659 @@
+.fatos{
+	top:100%;
+}
+#carousel,
+#carousel #wrap .item .wrap_icons .icon .desc,
+#carousel #wrap .item .content .seta_esq,
+#carousel #wrap .item .content .seta_dir,
+#carousel #wrap .item .title .right,
+#carousel #wrap .item .content .frame1_bg,
+#carousel #wrap .item .content .frame1_text,
+#carousel #wrap .item .content .frame1_text .env2,
+#carousel #wrap .item .content .frame1_text .env3,
+#carousel #wrap .item .content .frame2_bg,
+#carousel #wrap .item .content .frame2_text,
+#carousel #wrap .item .content .frame3_bg,
+#carousel #wrap .item .content .frame3_text,
+#carousel #wrap .item .content .frame3_text .env2,
+#carousel #wrap .item .content .frame3_text .env3,
+#carousel #wrap .item .content .frame4_bg,
+#carousel #wrap .item .content .frame4_text,
+#carousel #wrap .item .content .frame4_text .env2,
+#carousel #wrap .item .content .frame4_text .env3,
+#carousel #wrap .item .content .frame5_bg,
+#carousel #wrap .item .content .frame5_text,
+#carousel #wrap .item .content .frame5_text .env1{
+	position: absolute;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+#carousel #wrap .item,
+#carousel #wrap .item .wrap_icons .icon,
+#carousel #wrap .item .content .frame1_text .env1,
+#carousel #wrap .item .content .frame2_text .env1,
+#carousel #wrap .item .content .frame2_text .env2,
+#carousel #wrap .item .content .frame3_text .env1,
+#carousel #wrap .item .content .frame4_text .env1{
+	position: relative;
+}
+#carousel #wrap .item .content,
+#carousel #wrap .item .title,
+#carousel #wrap .item .wrap_icons{
+	position: relative;
+	width: 100%;
+	height: auto;
+	color: #FFF;
+}
+#carousel,
+#carousel #wrap .item .content,
+#carousel #wrap .item .wrap_icons,
+#carousel #wrap .item .wrap_icons .icon,
+#carousel #wrap .item .content .frame1_bg,
+#carousel #wrap .item .content .frame1_text,
+#carousel #wrap .item .content .frame1_text .env2,
+#carousel #wrap .item .content .frame1_text .env3,
+#carousel #wrap .item .content .frame2_bg,
+#carousel #wrap .item .content .frame2_text,
+#carousel #wrap .item .content .frame3_text,
+#carousel #wrap .item .content .frame3_text .env2,
+#carousel #wrap .item .content .frame3_text .env3,
+#carousel #wrap .item .content .frame4_text,
+#carousel #wrap .item .content .frame4_text .env2,
+#carousel #wrap .item .content .frame4_text .env3,
+#carousel #wrap .item .content .frame5_text{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.m_title,
+section#fatos,
+#carousel #wrap .item .content,
+#carousel #wrap .item .content .seta_esq,
+#carousel #wrap .item .content .seta_dir,
+#carousel #wrap .item .wrap_icons .icon,
+#carousel #wrap .item .content .frame1_bg,
+#carousel #wrap .item .content .frame1_text .env3,
+#carousel #wrap .item .content .frame2_bg,
+#carousel #wrap .item .content .frame2_text .env1,
+#carousel #wrap .item .content .frame3_text .env2,
+#carousel #wrap .item .content .frame4_text .env3{
+	background-position: center;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+#carousel,
+section#fatos,
+#carousel #wrap .item{
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+section#fatos{ background-image: url(../img/bg/bg.jpg) }
+#carousel{
+	position: relative;
+	height: 100%;
+	background-position: center;
+	background-attachment: fixed;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#carousel #wrap{
+	margin: 0 auto;
+	height: 100%;
+	vertical-align: middle;
+	text-align: center;
+}
+#carousel #wrap .item{
+	display: inline-block;
+	width: 1200px;
+	height: 100%;
+	text-align: left;
+	overflow: visible;
+}
+#carousel p{
+	display: block;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+#carousel #wrap .item .content{
+	background-image: url(../img/misc/grid.png);
+	padding: 30px;
+	background-position: top center;
+	border-top: 2px solid #FFF;
+	line-height: 23px;
+	height: 80%;
+}
+#carousel #wrap .item .title{
+	font-size: 80px;
+	text-indent: -6px; /* align left */
+	font-family: 'vw_headextrabold', Arial, sans-serif;
+}
+#carousel #wrap .item .title .right{
+	width: auto;
+	top: 0;
+}
+#carousel #wrap .item .title .description{
+	position: relative;
+	top: -15px;
+	font-size: 40px;
+}
+#carousel #wrap .item .intro{ padding-top: 4% }
+
+#carousel #wrap .item .wrap_icons{
+	height: 40%;
+}
+#carousel #wrap .item .wrap_icons .icon{
+	display: inline-block;
+	width: 13%;
+	height: 240px;
+	padding-top: 22%;
+	margin-left: 8px;
+	margin-right: 8px;
+	line-height: 20px;
+	min-width: 135px;
+	max-width: 152px;
+	background-position: center 50px;
+	background-size: 90% auto;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+
+#carousel #wrap .item .wrap_icons .icon.icon_suspensao{ background-image: url(../img/carousel/frame_intro/icon_suspensao.png); }
+#carousel #wrap .item .wrap_icons .icon.icon_desempenho{ background-image: url(../img/carousel/frame_intro/icon_desempenho.png); }
+#carousel #wrap .item .wrap_icons .icon.icon_offroad{ background-image: url(../img/carousel/frame_intro/icon_offroad.png); }
+#carousel #wrap .item .wrap_icons .icon.icon_hdc{ background-image: url(../img/carousel/frame_intro/icon_hdc.png); }
+#carousel #wrap .item .wrap_icons .icon.icon_eds{ background-image: url(../img/carousel/frame_intro/icon_eds.png); }
+
+#carousel #wrap .item .wrap_icons .icon .desc{
+	bottom: 0;
+	height: 50px;
+}
+#carousel #wrap .item .wrap_icons .icon:nth-child(odd){ top: 40px }
+#carousel #wrap .item .wrap_icons .icon:nth-child(even){ top: 165px }
+#carousel #wrap .item .wrap_icons .icon:nth-child(3){ border-top: 2px solid #FFF }
+
+/* SETAS */
+#carousel #wrap .item .content .seta_esq,
+#carousel #wrap .item .content .seta_dir{
+	background-position: center;
+	width: 32px;
+	height: 100%;
+	cursor: pointer;
+	bottom: 0;
+	z-index: 10;
+}
+#carousel #wrap .item .content .seta_esq{
+	background-image: url(../img/carousel/core/icon_seta_esq.png);
+	left: 0;
+}
+#carousel #wrap .item .content .seta_esq:hover{ background-image: url(../img/carousel/core/icon_seta_esq_h.png); }
+#carousel #wrap .item .content .seta_dir{
+	background-image: url(../img/carousel/core/icon_seta_dir.png);
+	right: 0;
+}
+#carousel #wrap .item .content .seta_dir:hover{ background-image: url(../img/carousel/core/icon_seta_dir_h.png); }
+
+/* FRAMES */
+#carousel #wrap .item .content .frame1_bg,
+#carousel #wrap .item .content .frame2_bg,
+#carousel #wrap .item .content .frame3_bg,
+#carousel #wrap .item .content .frame4_bg,
+#carousel #wrap .item .content .frame5_bg{
+	top:0;left:0;
+	height: 100%;
+	z-index: 1;
+}
+#carousel #wrap .item .content .frame1_text,
+#carousel #wrap .item .content .frame2_text,
+#carousel #wrap .item .content .frame3_text,
+#carousel #wrap .item .content .frame4_text,
+#carousel #wrap .item .content .frame5_text{
+	top: 0;left: 0;
+	height: auto;
+	text-align: right;
+	padding:0 35px;
+	clear: left;
+}
+#carousel #wrap .item .content .frame1_text,
+#carousel #wrap .item .content .frame2_text .env1,
+#carousel #wrap .item .content .frame2_text .env2,
+#carousel #wrap .item .content .frame3_text,
+#carousel #wrap .item .content .frame4_text,
+#carousel #wrap .item .content .frame5_text{
+	display: inline-block;
+	z-index: 3;
+}
+
+/* FRAME 1 */
+#carousel #wrap .item .content .frame1_bg{
+	background-image: url(../img/carousel/frame1/bg_suspensao.png);
+	background-position: top center;
+	background-size: 85% auto;
+}
+#carousel #wrap .item .content .frame1_text{
+	top:0; left: 0;
+	height: 96%;
+}
+#carousel #wrap .item .content .frame1_text .env1{ margin-top: 30px }
+#carousel #wrap .item .content .frame1_text .env2{
+	width: 55%;
+	bottom: 0;left: 0;
+	padding: 25px;
+	text-align: left;
+}
+#carousel #wrap .item .content .frame1_text .env3{
+	width: 45%;
+	bottom: 30px;right: 0;
+	height: 130px;
+	background-image: url(../img/carousel/frame1/saveiro_cargas.png);
+	background-size: auto 100%;
+}
+
+/* FRAME 2 */
+#carousel #wrap .item .content .frame2_bg{
+	background-image: url(../img/carousel/frame2/bg_saveiro.png);
+}
+#carousel #wrap .item .content .frame2_text .env1,
+#carousel #wrap .item .content .frame2_text .env2{
+	float: left;
+}
+#carousel #wrap .item .content .frame2_text .env2{ width: 55%;margin-top:60px; }
+
+#carousel #wrap .item .content .frame2_text .env1{
+	width: 45%;
+	height: 210px;
+	background-size: auto 100%;
+	margin-top:30px;
+	background-image: url(../img/carousel/frame2/velocimetro.png);
+}
+
+/* FRAME 3 */
+#carousel #wrap .item .content .frame3_bg{
+	background-image: url(../img/carousel/frame3/bg_saveiro.png);
+	background-position: top center;
+	background-size: 110% auto;
+}
+#carousel #wrap .item .content .frame3_text{
+	top:0; left: 0;
+	height: 100%;
+}
+#carousel #wrap .item .content .frame3_text .env1{
+	margin-top: 30px;
+	width: 40%;
+	text-align: left;
+}
+#carousel #wrap .item .content .frame3_text .env3{
+	width: 50%;
+	bottom: 0;right: 0;
+	padding: 25px 25px 50px 25px;
+}
+#carousel #wrap .item .content .frame3_text .env2{
+	width: 50%;
+	bottom: 30px;left: 0;
+	height: 160px;
+	background-image: url(../img/carousel/frame3/icon_abs.png);
+	background-size: auto 100%;
+	background-position: right center;
+}
+
+/* FRAME 4 */
+#carousel #wrap .item .content .frame4_bg{
+	background-image: url(../img/carousel/frame4/bg_saveiro.png);
+	background-position: top center;
+	background-size: 100% auto;
+}
+#carousel #wrap .item .content .frame4_text{
+	top:0; left: 0;
+	height: 100%;
+}
+#carousel #wrap .item .content .frame4_text .env1{
+	margin-top: 30px;
+	width: 47%;
+	text-align: left;
+}
+#carousel #wrap .item .content .frame4_text .env3{
+	width: 30%;
+	bottom: 30px;right: 0;
+	height: 160px;
+	background-image: url(../img/carousel/frame4/icon_hdc.png);
+	background-size: auto 100%;
+}
+
+/* FRAME 5 */
+#carousel #wrap .item .content .frame5_bg{
+	background-image: url(../img/carousel/frame5/bg_saveiro.png);
+	background-position: top center;
+	background-size: 100% auto;
+}
+#carousel #wrap .item .content .frame5_text{
+	top:0; left: 0;
+	height: 100%;
+}
+#carousel #wrap .item .content .frame5_text .env1{
+	top: 0; right: 30px;
+	margin-top: 70px;
+	width: 50%;
+	text-align: right;
+}
+#carousel #wrap .item .content .frame1_text .env2 .m_title{ background-image: url(../img/carousel/frame1/m_title.png) }
+#carousel #wrap .item .content .frame2_text .env2 .m_title{ background-image: url(../img/carousel/frame2/m_title.png) }
+#carousel #wrap .item .content .frame3_text .env3 .m_title{ background-image: url(../img/carousel/frame3/m_title.png) }
+#carousel #wrap .item .content .frame4_text .env1 .m_title{ background-image: url(../img/carousel/frame4/m_title.png) }
+#carousel #wrap .item .content .frame5_text .env1 .m_title{ background-image: url(../img/carousel/frame5/m_title.png) }
+.m_title{
+	padding: 25px 0 55px 0px;
+	letter-spacing: 2px;
+	display: none;
+}
+.s_mobile{ display: none; }
+.h_mobile{ display: block; }
+
+/*  MEDIAS                  _
+    Large:    > 1280         |
+    Medium:   < 1280 > 960   |-> Desktop
+    Small:    < 500 > 960   _|
+    Micro:    < 500           -> Mobile
+    */
+
+/* **** Large **** */
+@media screen and (min-width: 1280px){
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 960px){
+	.m_title{ padding: 66px 0 100px 0px; }
+	.big{ font-size: 2.4em }
+	#carousel #wrap{ padding: 0 20px; }
+}
+
+/* **** Medium **** */
+@media only screen and (min-width: 960px) and (max-width: 1280px){
+	.medium{ font-size: 18px }
+	.spaced{ letter-spacing: 3px }
+	.small{ font-size: 14px;line-height: 20px }
+	#carousel #wrap .item{ width: 960px; font-size: 14px }
+	#carousel #wrap .item .title{ font-size: 80px }
+	#carousel #wrap .item .title .description{ font-size: 30px }
+	#carousel #wrap .item .content{ line-height: 21px;background-repeat: repeat;height: 82%; }
+	#carousel #wrap .item .content .frame1_text .env3{ height: 120px;background-position: left center; }
+	#carousel #wrap .item .content .frame2_text .env1{ background-size: 90% auto }
+	#carousel #wrap .item .content .frame3_text .env2{ height: 145px; }
+	#carousel #wrap .item .content .frame4_text .env3{ height: 150px; }
+	#carousel #wrap .item .content .frame1_bg{ background-size: 90% auto; }
+	#carousel #wrap .item .content .frame3_bg{ background-size: 120% auto; }
+	#carousel #wrap .item .content .frame4_bg{ background-size: 100% auto; }
+	#carousel #wrap .item .content .frame4_bg,
+	#carousel #wrap .item .content .frame5_bg{ background-position: center 20px; }
+	#carousel #wrap .item .wrap_icons .icon{ min-width: 130px;max-width: 135px;height: 230px;padding-top:25%; }
+	#carousel #wrap .item .wrap_icons{ height: 38% }
+	#carousel #wrap .item .wrap_icons .icon:nth-child(even){ top: 100px; }
+	#carousel #wrap .item .content .frame5_bg{ background-position: top center;background-size: 90% auto; }
+	#carousel #wrap .item .content .frame5_text .env1{ margin-top:0; }
+	#carousel #wrap .item .content .frame2_text .env2{ margin-top: 35px; }
+	#carousel #wrap .item .content .frame2_text .env1{ margin-top: -5px;background-size: 75% auto; }
+	#carousel #wrap .item .content .frame4_bg{ background-position: top center;background-size: 92% auto; }
+}
+@media only screen and (min-device-width: 960px) and (max-device-width: 1280px) and (orientation:portrait){
+	#carousel #wrap .item .wrap_icons .icon{ min-width: 130px;max-width: 135px;height: 115%;padding-top:25%;min-height: 228px;max-height: 240px; }
+}
+
+/* **** Small **** */
+/*and (min-width: 500px)*/
+@media only screen and (max-width: 960px),
+	   only screen and (max-device-width: 960px) and (orientation:portrait){
+	/*classes*/
+	.medium{ font-size: 18px }
+	.m_title,
+	.s_mobile{ display: block; }
+	.h_mobile{ display: none; }
+	/*title*/
+	#carousel #wrap .item .title{ text-align: center;font-size: 40px;padding: 20px 0 40px 0;letter-spacing: 6px }
+	/*setas*/
+	#carousel #wrap .item .content .seta_esq,
+	#carousel #wrap .item .content .seta_dir{ height: 70px;width: 29px;top: -90px; }
+	#carousel #wrap .item .content .seta_esq,
+	#carousel #wrap .item .content .seta_esq:hover{ background-image: url(../img/carousel/core/m_icon_seta_esq.png) }
+	#carousel #wrap .item .content .seta_dir,
+	#carousel #wrap .item .content .seta_dir:hover{ background-image: url(../img/carousel/core/m_icon_seta_dir.png) }
+	/*item*/
+	#carousel #wrap .item{ width: 100%; font-size: 12px;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box; }
+	#carousel #wrap .item .intro{ padding-top:60px; }
+	#carousel #wrap .item .content{ background-image: url(../img/misc/m_grid.png); }
+	/*icon*/
+	#carousel #wrap .item .content.intro{ background-position: left -47px; }
+	#carousel #wrap .item .wrap_icons{ padding-top: 70px; }
+	#carousel #wrap .item .wrap_icons .icon{ background-position: center top;height: 196px;padding-top: 196px;width: 134px;margin-left:0;margin-right:0; }
+	#carousel #wrap .item .wrap_icons .icon:nth-child(even),
+	#carousel #wrap .item .wrap_icons .icon:nth-child(odd){ top: 0; }
+	#carousel #wrap .item .content,
+	#carousel #wrap .item .wrap_icons .icon:nth-child(3){ border-top: none; }
+	/*frames*/
+	#carousel #wrap .item .content .frame1_text,
+	#carousel #wrap .item .content .frame2_text,
+	#carousel #wrap .item .content .frame3_text,
+	#carousel #wrap .item .content .frame4_text,
+	#carousel #wrap .item .content .frame5_text{ padding:0; }
+	#carousel #wrap .item .intro br.h,
+	#carousel #wrap .item .title .right,
+	#carousel #wrap .item .content .frame1_text .env1,
+	#carousel #wrap .item .content .frame1_text .env3,
+	#carousel #wrap .item .content .frame2_text .env1,
+	#carousel #wrap .item .content .frame3_text .env1,
+	#carousel #wrap .item .content .frame3_text .env2,
+	#carousel #wrap .item .content .frame4_text .env3{ display: none }
+	#carousel #wrap .item .content .frame1_text .env2,
+	#carousel #wrap .item .content .frame2_text .env2,
+	#carousel #wrap .item .content .frame3_text .env3,
+	#carousel #wrap .item .content .frame4_text .env1,
+	#carousel #wrap .item .content .frame5_text .env1{ font-size: 14px }
+	#carousel #wrap .item .content .frame1_text .env2,
+	#carousel #wrap .item .content .frame2_text .env2,
+	#carousel #wrap .item .content .frame3_text .env3,
+	#carousel #wrap .item .content .frame4_text .env1,
+	#carousel #wrap .item .content .frame5_text .env1{ width: 100%;text-align: left;margin-top:300px;position: relative;padding: 0 }
+	/*frame1*/
+	#carousel #wrap .item .content .frame1_bg{ background-image: url(../img/carousel/frame1/m_bg_suspensao.png);background-size: 100% auto; }
+	/*frame2*/
+	#carousel #wrap .item .content .frame2_bg{ background-image: url(../img/carousel/frame2/m_bg_saveiro.png);background-size: 100% auto;background-position: center top; }
+	/*frame3*/
+	#carousel #wrap .item .content .frame3_bg{ background-image: url(../img/carousel/frame3/m_bg_saveiro.png);background-size: 95% auto; }
+	/*frame4*/
+	#carousel #wrap .item .content .frame4_bg{ background-image: url(../img/carousel/frame4/m_bg_saveiro.png);background-size: 95% auto; }
+	/*frame5*/
+	#carousel #wrap .item .content .frame5_text .env1{ left: 0; }
+	#carousel #wrap .item .content .frame5_bg{ background-image: url(../img/carousel/frame5/m_bg_saveiro.png);background-size: 95% auto; }
+}
+
+/* **** Micro **** */
+@media only screen and (max-width: 500px),
+	   only screen and (max-device-width: 500px) and (orientation:portrait){
+	#carousel #wrap .item{ width: 100%;padding:0 20px; }
+	#carousel #wrap .item{ -moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box; }
+	#carousel #wrap .item .content .frame1_text .env2,
+	#carousel #wrap .item .content .frame2_text .env2,
+	#carousel #wrap .item .content .frame3_text .env3,
+	#carousel #wrap .item .content .frame4_text .env1,
+	#carousel #wrap .item .content .frame5_text .env1{ margin-top:60%; }
+	#carousel #wrap .item .content.intro{ background-position: left top;background-repeat: repeat;padding: 30px 10px; }
+	#carousel #wrap .item .wrap_icons .icon{ height: 52%;padding-top: 52%;width: 30%;margin-left:2px;margin-right:2px; }
+}
+
+/* MEDIUM ONLY DEVICE */
+@media only screen and (max-device-width: 960px) and (orientation:portrait){
+	.medium{ line-height:1.3em; }
+	.big{ font-size: 3.5em }
+	.m_title{ padding: 42px 0 114px 0px; }
+	#carousel{ padding-top:5%; }
+	#carousel #wrap .item{ padding-left: 50px;padding-right: 50px; }
+	#carousel #wrap .item .desc{ font-size: 2.5em;line-height: 1em }
+	#carousel #wrap .item .title{ font-size: 6em;padding: 12px 0 40px 0;letter-spacing: 8px; }
+	#carousel #wrap .item .content{ background-repeat: no-repeat;height: 82% }
+	#carousel #wrap .item .content .seta_esq,
+	#carousel #wrap .item .content .seta_dir{ height: 108px;width: 66px;top: -142px; }
+	#fatos p{ font-size: 3em }
+	#carousel #wrap .item .content.intro{ padding-top: 7%; }
+	#carousel #wrap .item .wrap_icons .icon{ background-size: 80% auto;height: 36%;padding-top: 30%;width: 29%;max-width: none;font-size: 11px;margin-left:5px;margin-right:5px;background-size: 70% auto;background-position: center 10px; }
+	#carousel #wrap .item .wrap_icons .icon.icon_hdc,
+	#carousel #wrap .item .wrap_icons .icon.icon_eds{ top: 50px; }
+	#carousel #wrap .item .content *{ -webkit-text-size-adjust:100% }
+	#carousel #wrap .item .content .frame1_text .env2,
+	#carousel #wrap .item .content .frame2_text .env2,
+	#carousel #wrap .item .content .frame3_text .env3,
+	#carousel #wrap .item .content .frame4_text .env1,
+	#carousel #wrap .item .content .frame5_text .env1{ float: left;font-size: 1em;line-height: 1.8em;margin-top:57%; }
+	#carousel #wrap{ width: 100% }
+	#carousel *{ text-size-adjust: 100%; -moz-text-size-adjust:100%; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+}
+
+@media only screen and (min-device-width: 960px) and (orientation:landscape){
+	/*#carousel #wrap .item .content .frame1_bg,
+	#carousel #wrap .item .content .frame2_bg,
+	#carousel #wrap .item .content .frame3_bg,
+	#carousel #wrap .item .content .frame4_bg,
+	#carousel #wrap .item .content .frame5_bg{ background-size: auto 100% }
+	#carousel #wrap .item .content .frame5_text .env1{ margin-top: 5px; }*/
+	/*#carousel #wrap .item .content .frame5_bg{ background-image: url(../img/carousel/frame5/m_bg_saveiro.png);background-position: center; }*/
+}
+
+/*### Desktop < 960px ###*/
+@media screen and (max-width: 960px){
+
+}
+
+/*### Desktop > 960px e Desktop < 1280px e Tablets ###*/
+@media screen and (min-width: 960px) and (max-width: 960px){
+
+}
+/* DESKTOP */
+@media screen and (max-width: 960px){
+
+}
+/* MOBILE */
+@media only screen and (max-device-width: 500px){
+
+}
+@media only screen and (max-device-width: 960px){
+	.big{ font-size: 2.5em; }
+	#carousel{ padding-top: 2%; }
+	#carousel #wrap .item .title{ font-size: 5em; }
+	#carousel #wrap .item .content .seta_esq,
+	#carousel #wrap .item .content .seta_dir{ height: 80px;top: -120px; }
+	#carousel #wrap .item .content .frame1_text .env2,
+	#carousel #wrap .item .content .frame2_text .env2,
+	#carousel #wrap .item .content .frame3_text .env3,
+	#carousel #wrap .item .content .frame4_text .env1,
+	#carousel #wrap .item .content .frame5_text .env1{ font-size: 1.1em; line-height: 1.6em; }
+}
+/* DESKTOP & MOBILE */
+@media only screen and (max-device-width: 980px), screen and (max-width: 980px){
+	.small{ line-height: 18px }
+	#carousel #wrap .item .content .frame2_bg,
+	#carousel #wrap .item .content .frame3_bg{ background-size: 100% auto; }
+	#carousel #wrap .item .content .frame1_bg,
+	#carousel #wrap .item .content .frame4_bg,
+	#carousel #wrap .item .content .frame5_bg{ background-size: auto 100%; }
+	#carousel #wrap .item .content .frame1_bg{ background-position: top center }
+}
+@media only screen and (max-device-width: 980px) and (orientation: portrait){
+	#carousel #wrap .item .content .frame1_bg,
+	#carousel #wrap .item .content .frame4_bg,
+	#carousel #wrap .item .content .frame5_bg{ background-size: 100% auto; }
+}
+
+@media screen and (max-width: 960px){
+
+}
+
+/*Mobile portrait*/
+@media only screen and (orientation:portrait) and (max-device-width: 500px){
+
+}
+
+/*Mobile landscape*/
+@media only screen and (orientation:landscape) and (min-device-width: 980px){
+	#carousel #wrap{ padding-left:20px;padding-right:20px; }
+	#carousel #wrap .item{ width: 100% }
+	#carousel #wrap .item .title{ font-size: 65px }
+	#carousel #wrap .item .content .frame1_text .env3{ bottom:0; }
+	#carousel #wrap .item .content .frame1_text .env2{ padding: 10px 25px; }
+}
+@media only screen and (orientation:landscape) and (max-device-width: 960px){
+	.m_title{ padding: 10px 0 50px 0px;display: block;position: absolute;left: -122%;top:-5px;width: 111%; }
+	.s_mobile{ display: block; }
+	.h_mobile{ display: none; }
+	.big{ font-size: 1.8em; }
+	#carousel #wrap .item .title{ font-size: 40px }
+	#carousel #wrap .item .right,
+	#carousel #wrap .item .content .frame1_text .env1,
+	#carousel #wrap .item .content .frame1_text .env3,
+	#carousel #wrap .item .content .frame2_text .env1,
+	#carousel #wrap .item .content .frame3_text .env1,
+	#carousel #wrap .item .content .frame3_text .env2,
+	#carousel #wrap .item .content .frame4_text .env3{ display: none }
+	#carousel #wrap .item .content .frame1_text .env2,
+	#carousel #wrap .item .content .frame2_text .env2,
+	#carousel #wrap .item .content .frame3_text .env3,
+	#carousel #wrap .item .content .frame4_text .env1,
+	#carousel #wrap .item .content .frame5_text .env1{ font-size: 1.2em;line-height: 1.2em; }
+
+	#carousel #wrap .item{ width: 100%;padding:0 20px; }
+	#carousel #wrap .item{ -moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box; }
+	#carousel #wrap .item .content.intro{ background-position: left top;background-repeat: repeat;padding: 30px 10px; }
+
+	#carousel #wrap .item .content .frame1_bg,
+	#carousel #wrap .item .content .frame2_bg,
+	#carousel #wrap .item .content .frame3_bg,
+	#carousel #wrap .item .content .frame4_bg,
+	#carousel #wrap .item .content .frame5_bg{ width: 100%;background-position: top center;background-size: 100% auto;top:37px; }
+
+	#carousel #wrap .item .title{ text-align: center;font-size: 40px;padding: 10px 0 8px 0;letter-spacing: 6px }
+
+	#carousel #wrap .item .content .seta_esq,
+	#carousel #wrap .item .content .seta_dir{ height: 54px;width: 29px;top: -61px; }
+	#carousel #wrap .item .content .seta_esq,
+	#carousel #wrap .item .content .seta_esq:hover{ background-image: url(../img/carousel/core/m_icon_seta_esq.png) }
+	#carousel #wrap .item .content .seta_dir,
+	#carousel #wrap .item .content .seta_dir:hover{ background-image: url(../img/carousel/core/m_icon_seta_dir.png) }
+	/*item*/
+	#carousel #wrap .item{ width: 100%; font-size: 12px; }
+	#carousel #wrap .item .intro{ padding-top:60px; }
+	#carousel #wrap .item .content{ background-image: url(../img/misc/m_grid.png); }
+
+	#carousel #wrap .item .content.intro{ background-position: left -47px; }
+	#carousel #wrap .item .wrap_icons{ padding-top: 70px; }
+	#carousel #wrap .item .wrap_icons .icon{ background-position: center top;height: 196px;padding-top: 196px;width: 134px;margin-left:0;margin-right:0; }
+	#carousel #wrap .item .wrap_icons .icon:nth-child(even),
+	#carousel #wrap .item .wrap_icons .icon:nth-child(odd){ top: 0; }
+	#carousel #wrap .item .content,
+	#carousel #wrap .item .wrap_icons .icon:nth-child(3){ border-top: none; }
+
+
+	#carousel #wrap .item .content .frame1_bg{ background-image: url(../img/carousel/frame1/m_bg_suspensao.png); }
+	#carousel #wrap .item .content .frame2_bg{ background-image: url(../img/carousel/frame2/m_bg_saveiro.png); }
+	#carousel #wrap .item .content .frame3_bg{ background-image: url(../img/carousel/frame3/m_bg_saveiro.png); }
+	#carousel #wrap .item .content .frame4_bg{ background-image: url(../img/carousel/frame4/m_bg_saveiro.png); }
+	#carousel #wrap .item .content .frame5_bg{ background-image: url(../img/carousel/frame5/m_bg_saveiro.png); }
+
+	#carousel #wrap .item .content .frame1_text .env2,
+	#carousel #wrap .item .content .frame2_text .env2,
+	#carousel #wrap .item .content .frame3_text .env3,
+	#carousel #wrap .item .content .frame4_text .env1,
+	#carousel #wrap .item .content .frame5_text .env1{ position: absolute;top: 0;right: -100%;left: unset;bottom: unset;width: 90%;margin-top: 0;padding:20px;text-align: left; }
+	#carousel #wrap .item .content .frame1_text .env2,
+	#carousel #wrap .item .content .frame2_text .env2,
+	#carousel #wrap .item .content .frame3_text .env3,
+	#carousel #wrap .item .content .frame4_text .env1,
+	#carousel #wrap .item .content .frame5_text .env1,
+	#carousel #wrap .item .content,
+	#carousel #wrap .item{ -moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box; }
+
+	#carousel #wrap .item .content,
+	#carousel #wrap .item .title,
+	#carousel #wrap .item .wrap_icons{ width: 45%;left: 10%; }
+
+	#carousel #wrap .item .content{ padding: 25px;background-repeat: no-repeat;background-size: auto 100%;background-position: left 37px;height:75%; }
+}

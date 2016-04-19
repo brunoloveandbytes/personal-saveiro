@@ -1,0 +1,338 @@
+.versoes{top:100%;}
+.versoes_content{
+    position: absolute;
+    left: -640px;
+    overflow: hidden;
+    width: 1280px;
+    height: 100%;
+    margin-left: 50%;
+}
+.versoes .car{
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+}
+.versoes .title{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 100%;
+    height: 100px;
+}
+.versoes .title .main-title{font-family:'vw_headextrabold';font-size:64px;}
+.versoes .title .sub-title{
+    font-family: 'vw_headregular_italic';
+    font-size: 44px;
+    color: #717171;
+}
+.versoes .up-bar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+}
+.versoes .bar{
+    position: absolute;
+    top: 100px;
+    right: 85px;
+    left: 41px;
+    height: 0;
+    border-bottom: 2px solid #fff;
+}
+
+.versoes .plus{
+  position: absolute;
+  height: 64px;
+  width: 64px;
+  right: 27px;
+  top:70px;
+  background-size: 1000% 1000%;
+  background-position: -900% 0%;
+  cursor: pointer;
+}
+.versoes .arrow{
+    position: absolute;
+    top: 50%;
+    width: 64px;
+    height: 192px;
+    cursor: pointer;
+    -webkit-transform: translate(0px,-96px);
+       -moz-transform: translate(0px,-96px);
+        -ms-transform: translate(0px,-96px);
+         -o-transform: translate(0px,-96px);
+            transform: translate(0px,-96px);
+    background-size: 1000% 333%;
+    visibility: visible;
+    opacity: 1;
+}
+.versoes .left-arrow{background-position:0% -800%;left:15px;}
+.versoes .left-arrow:hover{background-position:-100% -800%;}
+.versoes .right-arrow{background-position:-200% -800%;right:15px;}
+.versoes .right-arrow:hover{background-position:-300% -800%;}
+.versoes .container{
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    left: 40px;
+    overflow: hidden;
+    width: 1200px;
+}
+.versoes .up-car{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.versoes .versoes_content .image-car{
+    position: absolute;
+    top: 0;
+    bottom: 50px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.versoes .ruler{
+    position: absolute;
+    margin-left: 50%;
+    left:-320px;
+    width: 640px;
+    height: 64px;
+    bottom: 50px;
+    cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+}
+.versoes .ruler .trail{
+    position: absolute;
+    margin-left: 50%;
+    left:-270px;
+    width: 540px;
+    top:25px;
+    height: 14px;
+}
+.versoes .ruler .trail-line{
+  position: absolute;
+  top:0px;
+  height: 6px;
+  width: 100%;
+  border-bottom: 2px solid #fff;
+}
+.versoes .ruler .handle{
+  position: absolute;
+  top:0px;
+  height: 64px;
+  width: 64px;
+  left:19px;
+  background-size: 1000% 1000%;
+  background-position: -800% 0%;
+}
+
+.versoes .ruler .trail-subdivisions{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid #fff;
+}
+
+.versoes .ruler .trail-subdivisions > div{
+    width: 89px;
+    height: 100%;
+    border-left: 1px solid #fff;
+    float:left;
+}
+
+.versoes .ruler .image-trabalho{
+   background-position: -800% -100%;
+   left:-40px;
+   top:-10px;
+}
+
+.versoes .ruler .image-aventura{
+   background-position: -900% -100%;
+   right:-40px;
+   top:-10px;
+}
+
+.versoes .ruler .texto-trabalho{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    left: -141px;
+    top: 5px;
+    font-family: 'vw_headextrabold';
+    font-size: 13px;
+    color: #6e6e6e;
+    text-align: right;
+    letter-spacing: 3px;
+}
+.versoes .ruler .texto-aventura{
+    position: absolute;
+    width: 110px;
+    height: 40px;
+    right: -153px;
+    top: 5px;
+    font-family: 'vw_headextrabold';
+    font-size: 13px;
+    color: #6e6e6e;
+    text-align: left;
+    letter-spacing: 3px;
+}
+
+.versoes .down-car{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.versoes .down-car .images-car{
+    position: absolute;
+    top: 25px;
+    left: 10%;
+    width: 80%;
+    height: 206px;
+}
+.versoes .down-car .images-car > div{
+    position: absolute;
+    width: 32%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.versoes .down-car .images-car .image-left-car{left:1%;}
+.versoes .down-car .images-car .image-middle-car{left:34%;}
+.versoes .down-car .images-car .image-right-car{left:67%;}
+.versoes .descriptions{
+    position: absolute;
+    top: 235px;
+    bottom: 150px;
+    left: 10%;
+    width: 80%;
+}
+.versoes .description-container{
+    position: absolute;
+    left: 1%;
+    width: 98%;
+}
+.versoes .description-container .description-switch{
+    position: absolute;
+    top: -7px;
+    right: 0;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    background-image: url('../img/tiles.png');
+    background-position: -400% -200%;
+    background-size: 1000% 1000%;
+}
+.versoes .description-container.itens{top:0px;}
+.versoes .description-container.itens.open{top:0px;bottom:100px;}
+.versoes .description-container.cores{bottom:50px;}
+.versoes .description-container.cores.open{top:100px;bottom:0px;}
+.versoes .description-container.opcionais.closed-serie{height:50px;bottom:50px;}
+.versoes .description-container.opcionais.closed-cores{top:50px;height:50px;}
+.versoes .description-container.opcionais.open{top:50px;bottom:50px;}
+
+.versoes .description-container.open .description-body{
+    top: 54px;
+    bottom: 2px;
+    left: -1px;
+    border-right: 1px solid #717171;
+}
+
+
+.versoes .description-container.open .description-switch{background-position: -600% -200%;}
+
+.versoes .description-title{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+}
+.versoes .description-title > div{
+    position: absolute;
+    top: 4px;
+    left: -1px;
+    width: 100%;
+    height: 42px;
+    font-family: 'vw_headbold';
+    line-height: 42px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    border: 1px solid #717171;
+}
+.versoes .description-body{
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.versoes .interessado{
+    font-family: 'vw_headregular';
+    line-height: 50px;
+    position: absolute;
+    bottom: 75px;
+    left: -125px;
+    width: 250px;
+    height: 50px;
+    margin-left: 50%;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 3px;
+    border: 2px solid #fff;
+}
+.versoes .versoes_content.on-description .ruler{visibility: hidden;opacity:0;}
+.versoes .versoes_content.on-description .arrow{visibility: hidden;opacity:0;}
+.versoes .versoes_content.on-description .up-car{top:-100%;}
+.versoes .versoes_content.on-description .down-car{top:0%;}
+.versoes .versoes_content.on-description .plus{background-position: -500% -200%;}
+
+.display-transition{
+  -webkit-transition: visibility 0s, opacity 0s linear 700ms;
+   -moz-transition: visibility 0s, opacity 0s linear 700ms;
+     -o-transition: visibility 0s, opacity 0s linear 700ms;
+        transition: visibility 0s, opacity 0s linear 700ms;
+}
+
+
+/*Small*/
+@media screen and (max-width: 960px){
+    .versoes_content{left:-50%;width:100%;min-width:560px;}
+    .versoes .container{left:10%;width:80%;}
+    .versoes .down-car .images-car{height:130px;}
+    .versoes .down-car .descriptions{top:155px;}
+    .versoes .title .main-title{font-size:44px;}
+    .versoes .title .sub-title{font-size: 24px;}
+    .versoes .bar{top:75px;}
+    .versoes .plus{top:45px;}
+    .versoes .ruler{left:-220px;width:440px;}
+    .versoes .ruler .trail{left:-168px;width:336px;}
+    .versoes .ruler .trail-subdivisions > div{width:55px;}
+    .versoes .ruler .handle{left:21px;}
+}
+
+/*Medium*/
+@media screen and (min-width: 960px) and (max-width: 1280px){
+    .versoes_content{left:-480px;width:960px;}
+    .versoes .container{left:30px;width:900px;}
+    .versoes .down-car .images-car{height:175px;}
+    .versoes .descriptions{top:210px;}
+}
+/*Mobile portrait*/
+@media only screen and (orientation:portrait) and (max-device-width: 500px){
+
+}
+/*Mobile landscape*/
+@media only screen and (orientation:landscape) and (max-device-width: 500px){
+  
+}
+@media screen and (max-height: 900px){
+    .versoes .down-car .images-car{height: 128px;}
+    .versoes .descriptions{top:155px;}
+}

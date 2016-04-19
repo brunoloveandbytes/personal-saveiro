@@ -1,0 +1,106 @@
+/*Default*/
+.letreiro{
+  position: absolute;
+  width:1000px;
+  height: 200px;
+  left: 50%;
+  top:50%;
+  text-align: center;
+  -webkit-transform: translate(-500px,-100px);
+     -moz-transform: translate(-500px,-100px);
+      -ms-transform: translate(-500px,-100px);
+       -o-transform: translate(-500px,-100px);
+          transform: translate(-500px,-100px);
+}
+.letreiro p{
+  font-family: 'vw_textregular';
+  font-size: 33px;
+  letter-spacing: 4px;
+}
+.slide3 .letreiro{
+  left:52%;
+  top:20%;
+}
+.letreiro .gear{
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  margin-left:50%;
+  left:0%;
+  top:68%;
+  background-image: url('../img/gear.png');
+  -webkit-background-size: 100% 100%;
+     -moz-background-size: 100% 100%;
+       -o-background-size: 100% 100%;
+          background-size: 100% 100%;
+}
+.slide.showWord .gear{
+  width: 10%;
+  height: 50%;
+  left:-5%;
+  top:43%;
+}
+
+.slide3 .letreiro .gear{
+  left:-43%;
+  top:29%;
+}
+.slide3.showWord .gear{
+  left:-48%;
+  top:4%;
+}
+
+
+.gear > div{
+  position: absolute;
+  -webkit-background-size: 100% 100%;
+     -moz-background-size: 100% 100%;
+       -o-background-size: 100% 100%;
+          background-size: 100% 100%;
+}
+.gear_big{
+  top:35%;
+  left:45%;
+  height: 39%;
+  width: 39%;
+  background-image: url('../img/gear_big.png');
+  
+}
+.gear_small{
+  top:29%;
+  left:24%;
+  height: 22%;
+  width: 22%;
+  background-image: url('../img/gear_small.png');
+}
+.letreiro-bar{
+  position: absolute;
+  left: 18%;
+  top: 36%;
+  width: 0%;
+  height: 1px;
+  border-bottom: 1px solid #fff;
+}
+.slide2 .letreiro-bar{left: 20%;}
+.slide3 .letreiro-bar{left: 33%;}
+.slide.showWord .letreiro-bar{
+  opacity: 1;
+  width: 18%;
+}
+.slide3.showWord .letreiro-bar{width:16%;}
+
+/*Small*/
+@media screen and (max-width: 960px){
+
+}
+/*Mobile portrait*/
+@media screen and (orientation:portrait) and (max-device-width: 500px){
+
+}
+/*Mobile landscape*/
+@media screen and (orientation:landscape) and (max-device-width: 500px){
+
+}
+
+
+

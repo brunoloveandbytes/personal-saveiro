@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<!--[if lt IE 10]> <html class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->    
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="viewport" content="width=980,user-scalable=no"/>
+	<script src="js/jquery.js"></script>
+	<script src="js/ismobile.js"></script>
+	<script src="js/image-loader.js"></script>
+	<script src="js/state-machine.js"></script>
+	<script src="js/input-manager.js"></script>
+	<script src="js/identidade.js"></script>
+	<script src="js/versoes.js"></script>
+	<script src="js/tour.js"></script>
+	<script src="js/cube.js"></script>
+	<script src="js/premios.js"></script>
+	<script src="js/robust.js"></script>
+	<script src="js/cross.js"></script>
+	<link rel="stylesheet" media="screen" href="css/normalize.css"/>
+	<link rel="stylesheet" media="screen" href="css/common.css"/>
+	<link rel="stylesheet" media="screen" href="css/letreiros.css"/>
+	<link rel="stylesheet" media="screen" href="css/tour.css"/>
+	<link rel="stylesheet" media="screen" href="css/cube.css"/>
+	<link rel="stylesheet" media="screen" href="css/menu.css"/>
+	<link rel="stylesheet" media="screen" href="css/identidade.css"/>
+	<link rel="stylesheet" media="screen" href="css/versoes.css"/>
+	<link rel="stylesheet" media="screen" href="css/fatos.css"/>
+	<link rel="stylesheet" media="screen" href="css/galeria.css"/>
+	<link rel="stylesheet" media="screen" href="css/premios.css"/>
+	<link rel="stylesheet" media="screen" href="css/robust.css"/>
+	<link rel="stylesheet" media="screen" href="css/cross.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animations.css">
+</head>
+<body id="body">
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM- 5DPCD6"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore (j,f);
+	})(window,document,'script','dataLayer','GTM-5DPCD6');</script>
+	<!-- End Google Tag Manager -->
+
+	<script type="text/javascript">(function(v, w, l, g) {
+	var js=ajs=w.getElementsByTagName(l)[0]; (w.getElementById(g)) ? "" :
+	v['VWLeadsGlobalObject']=g; v[g]=g[g]||function(){(v[g].v=v[g].v||[]).push(arguments)};
+	js=w.createElement(l); js.id = g; js.async=1;js.src =
+	"//leads‐cdn.ageriservicos.com.br/static/js/vw‐leads.global.min.js?version=v1.0";
+	ajs.parentNode.insertBefore(js, ajs); }(window, document, 'script', 'vwleads'));
+	vwleads('site', 'nova_saveiro');vwleads('debug');</script>
+
+	<div class="main-header opacity-transition">
+		<div class="content-header">
+			<div class="vw-logo"></div>
+			<div class="vwCarName"><p>Nova Saveiro</p></div>
+		</div>
+	</div>
+	<div class="main-content" onclick="window.inputManager.dealClick(event)">
+		<section id="slide1" class="slide slide1">
+			<div class="letreiro">
+				<p>
+					<span class="hide second-word-transition">SEU</span>
+					<span class="hide first-word-transition">TRABALHO</span>
+					<span class="hide third-word-transition">MOTIVA</span>
+					<span class="hide fourth-word-transition">NOSSO</span>
+					<span class="hide fifth-word-transition vwTextBold">DESEMPENHO</span>
+				</p>
+				<div class="letreiro-bar underline-transition"></div>
+				<div class="gear gear-transition">
+					<div class="gear_big rotating"></div>
+				<div class="gear_small rotating-inverted"></div>
+				</div>
+			</div>
+		</section>
+		<section id="slide2" class="slide slide2">
+			<div class="letreiro">
+				<p>
+					<span class="hide second-word-transition">SUA</span>
+					<span class="hide first-word-transition">AVENTURA</span>
+					<span class="hide third-word-transition">DESAFIA</span>
+					<span class="hide fourth-word-transition">NOSSA</span>
+					<span class="hide fifth-word-transition vwTextBold">EVOLUÇÃO</span>
+				</p>
+				<div class="letreiro-bar underline-transition"></div>
+				<div class="gear gear-transition">
+					<div class="gear_big rotating"></div>
+				<div class="gear_small rotating-inverted"></div>
+				</div>
+			</div>
+		</section>
+		<section id="slide3" class="slide slide3">
+			<div id="rotational" class="rotational">
+				<div id="black_car" class="black_car"></div>
+				<div id="blue_car" class="blue_car zoomCar"></div>
+			</div>
+			<div class="letreiro">
+				<p>
+					<span class="hide second-word-transition">VOCÊ</span>
+					<span class="hide first-word-transition">NOS</span>
+					<span class="hide third-word-transition">INSPIROU A</span>
+					<span class="hide fourth-word-transition vwTextBold">CHEGAR</span>
+					<span class="hide fifth-word-transition">ATÉ AQUI</span>
+				</p>
+				<div class="letreiro-bar underline-transition"></div>
+				<div class="gear gear-transition">
+					<div class="gear_big rotating"></div>
+				<div class="gear_small rotating-inverted"></div>
+				</div>
+			</div>
+		</section>
+		<section id="home" class="slide home">
+			<div class="cars-home slide"></div>
+			<div class="sub-slide">
+				<div class="home-content">
+					<div class="premios_button" onclick="window.stateMachine.move(window.stateMachine.Trigger.Premios)"></div>	
+					<div class="robust-button car-button" onclick="window.stateMachine.move(window.stateMachine.Trigger.Robust)">
+						<div class="plus"></div>
+						<div class="bar"></div>
+						<div class="texto">SAVEIRO ROBUST</div>
+					</div>
+					<div class="cross-button car-button" onclick="window.stateMachine.move(window.stateMachine.Trigger.Cross)">
+						<div class="plus"></div>
+						<div class="bar"></div>
+						<div class="texto">SAVEIRO CROSS</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="identidade" class="slide identidade onBottom">
+			<div class="sub-slide">
+				<div class="identidade_content">
+					<div class="title">IDENTIDADE</div>
+					<div class="center-bar"></div>
+					<div class="left-bar"></div>
+					<div class="right-bar"></div>
+					<div class="text upper-text">A VOLKSWAGEN SABE O QUANTO VOCÊ SE DEDICA AO TRABALHO.</div>
+					<div class="text under-text">E JÁ QUE O <span>TRABALHO</span> É PESADO, SUA <span>DIVERSÃO</span> TAMBÉM TEM QUE SER.</div>
+					<div class="car-container">
+						<div class="car-02" style="left:0%;"></div>
+						<div class="car-03"></div>
+						<div class="car-04"></div>
+						<div class="car-05"></div>
+					</div>
+					<div class="saiba-mais" onclick="window.identidadeManager.showDescription()">SAIBA MAIS</div>
+					<div class="description">Com um milhão de unidade produzidas, a Nova Saveiro ainda consegue se superar. Por fora, você encontra um design único mas isso não quer dizer que é é só mais uma picape bonita. A Nova Saveiro é forte e aguenta o tranco do seu trabalho, qualquer que seja o tamanho da carga. Já por dentro, vai ser difícil encontrar um carro com tanto conforto e tecnologia. Com isso a Nova Saveiro consegue melhorar outro desempenho: o seu.
+					</div>
+					<div class="close basic-icon" onclick="window.identidadeManager.closeDescription()"></div>
+					<div class="premios_button" onclick="window.stateMachine.move(window.stateMachine.Trigger.Premios)"></div>	
+				</div>
+			</div>
+		</section>
+		<section id="fatos" class="slide fatos onBottom">
+			<div class="sub-slide">
+				<div id="carousel">
+					<div id="wrap">
+						<!-- ************** FRAME INTRO ************** -->
+						<div class="item">
+							<div class="title">FATOS</div>
+							<div class="content intro center">
+								<p class="upper blue spaced medium head_bold">tem muita coisa sendo dita sobre a saveiro por a&iacute;.</p><br/>
+								<p class="medium text_light">Chegou a hora de voc&ecirc; ouvir o que realmente &eacute; verdade. Escolha um dos cinco fatos<br class="h" />
+								sobre a Saveiro e descubra porque essa &eacute; uma das pick ups mais vendidas do Brasil.</p>
+								<div class="wrap_icons full head_bold upper">
+									<div class="icon icon_suspensao"><div class="desc"><span class="blue">#1</span> suspens&atilde;o</div></div><!--
+								 --><div class="icon icon_desempenho"><div class="desc"><span class="blue">#2</span> desempenho</div></div><!--
+								 --><div class="icon icon_offroad"><div class="desc"><span class="blue">#3</span> abs<br />off-road</div></div><!--
+								 --><div class="icon icon_hdc"><div class="desc"><span class="blue">#4</span> hdc</div></div><!--
+								 --><div class="icon icon_eds"><div class="desc"><span class="blue">#5</span> eds</div></div>
+								</div>
+							</div>
+						</div>
+						<!-- ************** FRAME 1 ************** -->
+						<div class="item">
+							<div class="title">FATOS<div class="right"><span class="gray">#1</span> <div class="inline description big upper text_bold">suspens&atilde;o</div></div></div>
+							<div class="content center">
+								<div class="frame1_bg"></div>
+								<div class="frame1_text small text_light"><div class="env1 upper small">Procurando por robustez de um ve&iacute;culo de carga com a<br />dirigibilidade de um autom&oacute;vel? Ent&atilde;o voc&ecirc; acabou de achar.</div><div class="env2"><div class="m_title upper text_bold big"><span class="blue">#1</span> suspens&atilde;o</div>A Saveiro &eacute; a pick up com o melhor desempenho, n&atilde;o importa qual seja o terreno ou a carga. Ela passa por cima tranquilamente. Isso gra&ccedil;as ao seu sistema de suspens&atilde;o Helicoidal. Suas molas refor&ccedil;adas fazem cargas pesadas serem transportadas como se fossem leves, e sua flexibilidade e amortecimento garantem confian&ccedil;a na hora de transportar as cargas mais delicadas.</div><div class="env3"></div></div>
+							</div>
+						</div>
+						<!-- ************** FRAME 2 ************** -->
+						<div class="item">
+							<div class="title">FATOS<div class="right"><span class="gray">#2</span> <div class="inline description big upper text_bold">desempenho</div></div></div>
+							<div class="content center">
+								<div class="frame2_bg"></div>
+								<div class="frame2_text small text_light"><div class="env1"></div><div class="env2"><div class="m_title upper text_bold big"><span class="blue">#2</span> desempenho</div>A Saveiro Cross possui o melhor desempenho de seu segmento. Seu novo motor 1.6l MSI agora chega na velocidade m&aacute;xima de 173 km/h (se abastecido com gasolina) e de 176 km/h (se abastecido com etanol). J&aacute; de 0 a 100 Km/h, ela vai mais ou menos no tempo que demora para ler esse textinho: 10,6 segundos com gasolina e 10,1 segundos com etanol. Chegou at&eacute; aqui? Ent&atilde;o a Saveiro j&aacute; estaria a 100 km/h.</div></div>
+							</div>
+						</div>
+						<!-- ************** FRAME 3 ************** -->
+						<div class="item">
+							<div class="title">FATOS<div class="right"><span class="gray">#3</span> <div class="inline description big upper text_bold">abs off-road</div></div></div>
+							<div class="content center">
+								<div class="frame3_bg"></div>
+								<div class="frame3_text small text_light"><div class="env1 small">Outra inova&ccedil;&atilde;o do utilit&aacute;rio s&atilde;o os freios ABS com fun&ccedil;&atilde;o off-road. Esse recurso refor&ccedil;a os freios em estradas n&atilde;o pavimentadas, uma exclusividade que estreia no segmento das picapes compactas de cabine dupla.</div><div class="env2"></div><div class="env3"><div class="m_title upper text_bold big"><span class="blue">#3</span> abs off-road</div><span class="s_mobile" style="display:inline">Esse recurso refor&ccedil;a os freios em estradas n&atilde;o pavimentadas, uma exclusividade que estreia no segmento das picapes compactas de cabine dupla.</span> Ativado pelo bot&atilde;o off-road no painel, o software de controle do ABS e do ESC provoca um curto travamento da roda, criando uma &quot;pequena cunha&quot;, com o material do piso, &agrave; frente do pneu, o que ajuda a reduzir o espa&ccedil;o de frenagem nessas condi&ccedil;ões de piso &quot;solto&quot;.</div></div>
+							</div>
+						</div>
+						<!-- ************** FRAME 4 ************** -->
+						<div class="item">
+							<div class="title">FATOS<div class="right"><span class="gray">#4</span> <div class="inline description big upper text_bold">hdc</div></div></div>
+							<div class="content center">
+								<div class="frame4_bg"></div>
+								<div class="frame4_text small text_light"><div class="env1 small"><h3 class="upper medium text_bold h_mobile">Controle de descida</h3><div class="m_title upper text_bold big"><span class="blue">#4</span> hdc</div>Quem trabalha com transporte de carga, sabe: a pick up deve segurar o tranco e manter tudo no lugar, sem sustos. &Eacute; isso que o HDC faz e a Saveiro &eacute; a primeira pick up a ter esse recurso no Brasil. Quando voc&ecirc; estiver na descida em baixa velocidade, um toque no bot&atilde;o off-road no painel fazem os freios serem acionados automaticamente. Sua descida fica mais segura e controlada, n&atilde;o importando a condi&ccedil;&atilde;o do piso. Viu? Com a Saveiro, as &uacute;nicas surpresas que voc&ecirc; vai ter s&atilde;o positivas.</div><div class="env3"></div></div>
+							</div>
+						</div>
+						<!-- ************** FRAME 5 ************** -->
+						<div class="item">
+							<div class="title">FATOS<div class="right"><span class="gray">#5</span> <div class="inline description big upper text_bold">eds</div></div></div>
+							<div class="content center">
+								<div class="frame5_bg"></div>
+								<div class="frame5_text small text_light"><div class="env1 small"><h3 class="upper medium text_bold h_mobile">Bloqueio eletr&ocirc;nico do diferencial</h3><div class="m_title upper text_bold big"><span class="blue">#5</span> eds</div>O Bloqueio eletr&ocirc;nico do diferencial &eacute; um sistema de &quot;tra&ccedil;&atilde;o inteligente&quot; autom&aacute;tico, voc&ecirc; n&atilde;o precisa apertar nenhum bot&atilde;o pra ele funcionar. Assim que voc&ecirc; entrar na sua Saveiro, quando for preciso, ele ativa o freio da roda com menor tra&ccedil;&atilde;o, transferindo o torque para a roda com maior tra&ccedil;&atilde;o. Voc&ecirc; n&atilde;o vai querer ficar parado no meio do caminho, n&eacute;?</div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="versoes" class="slide versoes">
+			<div class="sub-slide">
+				<div class="versoes_content">
+					<div class="car car1 robust" style="left:0%;">
+						<div class="title"><span class="main-title">ROBUST</span><span class="sub-title"> CABINE SIMPLES</span></div>
+						<div class="container">
+							<div class="up-car default-fast-transition">
+								<div class="image-car"></div>
+							</div>
+							<div class="down-car default-fast-transition">
+								<div class="images-car">
+									<div class="image-left-car"></div>
+									<div class="image-middle-car"></div>
+									<div class="image-right-car"></div>
+								</div>
+								<div class="descriptions">
+									<div class="itens description-container open">
+										<div class="description-title" onclick="window.versoesManager.switchDescription(this)"><div>&nbsp;&nbsp;&nbsp;ITENS DE SÉRIE</div></div>
+										<div class="description-body">Loren série</div>
+										<div class="description-switch" onclick="window.versoesManager.switchDescription(this)"></div>
+									</div>
+									<div class="opcionais description-container closed-serie">
+										<div class="description-title" onclick="window.versoesManager.switchDescription(this)"><div>&nbsp;&nbsp;&nbsp;OPCIONAIS</div></div>
+										<div class="description-body"><div>LOREM OPCIONAIS</div></div>
+										<div class="description-switch" onclick="window.versoesManager.switchDescription(this)"></div>
+									</div>
+									<div class="cores description-container">
+										<div class="description-title" onclick="window.versoesManager.switchDescription(this)"><div>&nbsp;&nbsp;&nbsp;CORES</div></div>
+										<div class="description-body">Loren cores</div>
+										<div class="description-switch" onclick="window.versoesManager.switchDescription(this)"></div>
+									</div>
+								</div>
+								<div class="interessado"><div>ESTOU INTERESSADO</div></div>
+							</div>
+						</div>
+					</div>
+					<div class="car car2 trend_simples">
+						<div class="title"><span class="main-title">TRENDLINE</span><span class="sub-title"> CABINE SIMPLES</span></div>
+						<div class="container">
+							<div class="up-car default-fast-transition">
+								<div class="image-car"></div>
+							</div>
+							<div class="down-car default-fast-transition">
+								<div class="images-car">
+									<div class="image-left-car"></div>
+									<div class="image-middle-car"></div>
+									<div class="image-right-car"></div>
+								</div>
+								<div class="descriptions">
+									<div class="itens description-container open">
+										<div class="description-title" onclick="window.versoesManager.switchDescription(this)"><div>ITENS DE SÉRIE</div></div>
+										<div class="description-body">Loren série</div>
+										<div class="description-switch" onclick="window.versoesManager.switchDescription(this)"></div>
+									</div>
+									<div class="opcionais description-container closed-serie">
+										<div class="description-title" onclick="window.versoesManager.switchDescription(this)"><div>OPCIONAIS</div></div>
+										<div class="description-body"><div>LOREM OPCIONAIS</div></div>
+										<div class="description-switch" onclick="window.versoesManager.switchDescription(this)"></div>
+									</div>
+									<div class="cores description-container">
+										<div class="description-title" onclick="window.versoesManager.switchDescription(this)"><div>CORES</div></div>
+										<div class="description-body">Loren cores</div>
+										<div class="description-switch" onclick="window.versoesManager.switchDescription(this)"></div>
+									</div>
+								</div>
+								<div class="interessado"><div>ESTOU INTERESSADO</div></div>
+							</div>
+						</div>
+					</div>
+					<div class="car car3 trend_dupla">
+						<div class="title"><span class="main-title">TRENDLINE</span><span class="sub-title"> CABINE DUPLA</span></div>
+						<div class="container">
+							<div class="up-car default-fast-transition">
+								<div class="image-car"></div>
+							</div>
+							<div class="down-car default-fast-transition">
+								<div class="images-car">
+									<div class="image-left-car"></div>
+									<div class="image-middle-car"></div>
+									<div class="image-right-car"></div>
+								</div>
+								<div class="descriptions">
+									<div class="itens description-container open">
+										<div class="description-title" onclick="window.versoesManager.switchDescription(this)"><div>ITENS DE SÉRIE</div></div>
+										<div class="description-body">Loren série</div>
+										<div class="description-switch" onclick="window.versoesManager.switchDescription(this)"></div>
+									</div>
+									<div class="opcionais description-container closed-serie">
+										<div class="description-title" onclick="window.versoesManager.switchDescription(this)"><div>OPCIONAIS</div></div>
+										<div class="description-body"><div>LOREM OPCIONAIS</div></div>
+										<div class="description-switch" onclick="window.versoesManager.switchDescription(this)"></div>
+									</div>
+									<div class="cores description-container">
+										<div class="description-title" onclick="window.versoesManager.switchDescription(this)"><div>CORES</div></div>
+										<div class="description-body">Loren cores</div>
+										<div class="description-switch" onclick="window.versoesManager.switchDescription(this)"></div>
+									</div>
+								</div>
+								<div class="interessado"><div>ESTOU INTERESSADO</div></div>
+							</div>
+						</div>
+					</div>
+					<div class="car car4 trend_estendida">
+						<div class="title"><span class="main-title">TRENDLINE</span><span class="sub-title"> CABINE ESTENDIDA</span></div>
+						<div class="container">
+							<div class="up-car default-fast-transition">
+								<div class="image-car"></div>
+							</div>
+							<div class="down-car default-fast-transition">
+								<div class="images-car">
+									<div class="image-left-car"></div>
+									<div class="image-middle-car"></div>
+									<div class="image-right-car"></div>
+								</div>
+								<div class="descriptions">
+									<div class="itens description-container open">
+										<div class="description-title" onclick="window.versoesManager.switchDescription(this)"><div>ITENS DE SÉRIE</div></div>
+										<div class="description-body">Loren série</div>
+										<div class="description-switch" onclick="window.versoesManager.switchDescription(this)"></div>
+									</div>
+									<div class="opcionais description-container closed-serie">
+										<div class="description-title" onclick="window.versoesManager.switchDescription(this)"><div>OPCIONAIS</div></div>
+										<div class="description-body"><div>LOREM OPCIONAIS</div></div>
+										<div class="description-switch" onclick="window.versoesManager.switchDescription(this)"></div>
+									</div>
+									<div class="cores description-container">
+										<div class="description-title" onclick="window.versoesManager.switchDescription(this)"><div>CORES</div></div>
+										<div class="description-body">Loren cores</div>
+										<div class="description-switch" onclick="window.versoesManager.switchDescription(this)"></div>
+									</div>
+								</div>
+								<div class="interessado"><div>ESTOU INTERESSADO</div></div>
+							</div>
+						</div>
+					</div>
+					<div class="car car5 highline">
+						<div class="title"><span class="main-title">HIGHLINE</span><span class="sub-title"> COMPLETA</span></div>
+						<div class="container">
+							<div class="up-car default-fast-transition">
+								<div class="image-car"></div>
+							</div>
+							<div class="down-car default-fast-transition">
+								<div class="images-car">
+									<div class="image-left-car"></div>
+									<div class="image-middle-car"></div>
+									<div class="image-right-car"></div>
+								</div>
+								<div class="descriptions">
+									<div class="itens description-container open">
+										<div class="description-title" onclick="window.versoesManager.switchDescription(this)"><div>ITENS DE SÉRIE</div></div>
+										<div class="description-body">Loren série</div>
+										<div class="description-switch" onclick="window.versoesManager.switchDescription(this)"></div>
+									</div>
+									<div class="opcionais description-container closed-serie">
+										<div class="description-title" onclick="window.versoesManager.switchDescription(this)"><div>OPCIONAIS</div></div>
+										<div class="description-body"><div>LOREM OPCIONAIS</div></div>
+										<div class="description-switch" onclick="window.versoesManager.switchDescription(this)"></div>
+									</div>
+									<div class="cores description-container">
+										<div class="description-title" onclick="window.versoesManager.switchDescription(this)"><div>CORES</div></div>
+										<div class="description-body">Loren cores</div>
+										<div class="description-switch" onclick="window.versoesManager.switchDescription(this)"></div>
+									</div>
+								</div>
+								<div class="interessado"><div>ESTOU INTERESSADO</div></div>
+							</div>
+						</div>
+					</div>
+					<div class="car car6 cross_dupla">
+						<div class="title"><span class="main-title">CROSS</span><span class="sub-title"> CABINE DUPLA</span></div>
+						<div class="container">
+							<div class="up-car default-fast-transition">
+								<div class="image-car"></div>
+							</div>
+							<div class="down-car default-fast-transition">
+								<div class="images-car">
+									<div class="image-left-car"></div>
+									<div class="image-middle-car"></div>
+									<div class="image-right-car"></div>
+								</div>
+								<div class="descriptions">
+									<div class="itens description-container open">
+										<div class="description-title" onclick="window.versoesManager.switchDescription(this)"><div>ITENS DE SÉRIE</div></div>
+										<div class="description-body">Loren série</div>
+										<div class="description-switch" onclick="window.versoesManager.switchDescription(this)"></div>
+									</div>
+									<div class="opcionais description-container closed-serie">
+										<div class="description-title" onclick="window.versoesManager.switchDescription(this)"><div>OPCIONAIS</div></div>
+										<div class="description-body"><div>LOREM OPCIONAIS</div></div>
+										<div class="description-switch" onclick="window.versoesManager.switchDescription(this)"></div>
+									</div>
+									<div class="cores description-container">
+										<div class="description-title" onclick="window.versoesManager.switchDescription(this)"><div>CORES</div></div>
+										<div class="description-body">Loren cores</div>
+										<div class="description-switch" onclick="window.versoesManager.switchDescription(this)"></div>
+									</div>
+								</div>
+								<div class="interessado"><div>ESTOU INTERESSADO</div></div>
+							</div>
+						</div>
+					</div>
+					<div class="car car7 cross_estendida">
+						<div class="title"><span class="main-title">CROSS</span><span class="sub-title"> CABINE ESTENDIDA</span></div>
+						<div class="container">
+							<div class="up-car default-fast-transition">
+								<div class="image-car"></div>
+							</div>
+							<div class="down-car default-fast-transition">
+								<div class="images-car">
+									<div class="image-left-car"></div>
+									<div class="image-middle-car"></div>
+									<div class="image-right-car"></div>
+								</div>
+								<div class="descriptions">
+									<div class="itens description-container open">
+										<div class="description-title" onclick="window.versoesManager.switchDescription(this)"><div>ITENS DE SÉRIE</div></div>
+										<div class="description-body">Loren série</div>
+										<div class="description-switch" onclick="window.versoesManager.switchDescription(this)"></div>
+									</div>
+									<div class="opcionais description-container closed-serie">
+										<div class="description-title" onclick="window.versoesManager.switchDescription(this)"><div>OPCIONAIS</div></div>
+										<div class="description-body"><div>LOREM OPCIONAIS</div></div>
+										<div class="description-switch" onclick="window.versoesManager.switchDescription(this)"></div>
+									</div>
+									<div class="cores description-container">
+										<div class="description-title" onclick="window.versoesManager.switchDescription(this)"><div>CORES</div></div>
+										<div class="description-body">Loren cores</div>
+										<div class="description-switch" onclick="window.versoesManager.switchDescription(this)"></div>
+									</div>
+								</div>
+								<div class="interessado"><div>ESTOU INTERESSADO</div></div>
+							</div>
+						</div>
+					</div>
+					<div class="ruler display-transition">
+						<div class="trail">
+							<div class="trail-line"></div>
+							<div class="trail-subdivisions">
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+						<div class="basic-icon image-trabalho"></div>
+						<div class="basic-icon image-aventura"></div>
+						<div class="texto-trabalho noselect">TRABALHO PESADO</div>
+						<div class="texto-aventura">AVENTURA DE VERDADE</div>
+						<div class="handle"></div>
+					</div>
+					<div class="up-bar">
+						<div class="bar"></div>
+						<div class="plus" onclick="$('.versoes_content').toggleClass('on-description');"></div>
+					</div>
+					<div class="arrow left-arrow display-transition" onclick="window.versoesManager.goToLeft();"></div>
+					<div class="arrow right-arrow display-transition" onclick="window.versoesManager.goToRight();"></div>
+				</div>
+			</div>
+		</section>
+
+		<!--<div id="background_clean" class="slide background_clean"></div>-->
+		<section id="tour" class="slide tour onBottom">
+			<div class="tour_desktop">
+				<div class="tour_principal onMiddle default-transition">
+					<div class="tour_title">EXCELÊNCIA EM QUALQUER FINALIDADE.</div>
+					<div class="tour_description">A Saveiro traz a verdadeira combinação entre trabalho e diversão. Se por fora, ela é robusta e forte, é por dentro que seu design exclusivo agrega conforto e praticidade. Um dia cansativo fica um pouco melhor quando você volta pra casa num interior como esse. Escolha a versão e veja por si mesmo.</div>
+					<div class="tour_cars">
+						<div class="tour_left_car" onclick="$('.tour_sequence').addClass('onMiddle');$('.tour_principal').removeClass('onMiddle');"></div>
+						<div class="tour_right_car" onclick="$('.tour_sequence').addClass('onMiddle');$('.tour_principal').removeClass('onMiddle');"></div>
+					</div>
+					<div class="tour_down_bar"></div>
+				</div>
+				<div class="tour_sequence default-transition">	
+					<div id="tour_trabalho_sequence" class="tour_car_container_sequence">
+						<div class="tour_shadow_sequence">
+							<div class="shadow_item1" style="left:0%;"></div>
+							<div class="shadow_item2"></div>
+							<div class="shadow_item3"></div>
+							<div class="shadow_item4"></div>
+							<div class="shadow_item5"></div>
+						</div>
+						<div class="tour_car_sequence">
+							<div class="trabalho_car_item1" style="left:0%;"></div>
+							<div class="trabalho_car_item2"></div>
+							<div class="trabalho_car_item3"></div>
+							<div class="trabalho_car_item4"></div>
+							<div class="trabalho_car_item5"></div>
+						</div>
+					</div>
+					<div id="tour_aventura_sequence" class="tour_car_container_sequence">
+						<div class="tour_shadow_sequence">
+							<div class="shadow_item1" style="left:0%;"></div>
+							<div class="shadow_item2"></div>
+							<div class="shadow_item3"></div>
+							<div class="shadow_item4"></div>
+							<div class="shadow_item5"></div>
+						</div>
+						<div class="tour_car_sequence">
+							<div class="aventura_car_item1" style="left:0%;"></div>
+							<div class="aventura_car_item2"></div>
+							<div class="aventura_car_item3"></div>
+							<div class="aventura_car_item4"></div>
+							<div class="aventura_car_item5"></div>
+						</div>
+					</div>
+					<div class="tour_slider_sequence">
+						<div class="tour_left_bar_sequence">
+							<div class="tour_handle_sequence"></div>
+							EXTERNO
+						</div>
+						<div class="tour_right_bar_sequence" onclick="window.cubeManager.setActive(true);window.cubeManager.setCubeName('saveiro_aventura_interno');">INTERNO</div>
+					</div>
+				</div>
+			</div>
+			<div class="tour_mobile">
+				<div class="tour_mobile_externo_trabalho">
+					<div class="tour_mobile_aventura_arrow tour_mobile_arrow" onclick="$('.tour_mobile_externo_aventura').css('display','inline');$('.tour_mobile_externo_trabalho').css('display','none');">Aventura</div>
+					<div class="tour_mobile_botao_interno" onclick="window.cubeManager.setActive(true);window.cubeManager.setCubeName('saveiro_aventura_interno');">INTERNO</div>
+				</div>
+				<div class="tour_mobile_externo_aventura">
+					<div class="tour_mobile_trabalho_arrow tour_mobile_arrow" onclick="$('.tour_mobile_externo_aventura').css('display','none');$('.tour_mobile_externo_trabalho').css('display','inline');">Trabalho</div>
+					<div class="tour_mobile_botao_interno" onclick="window.cubeManager.setActive(true);window.cubeManager.setCubeName('saveiro_aventura_interno');">INTERNO</div>
+				</div>
+			</div>
+		</section>
+		<section id="galeria" class="slide galeria onBottom">
+			<div class="sub-slide">
+				<div id="vw-tabs">
+				    <div class="tab" data-tab="trabalho">
+				    	<div class="gallery group">
+							<div class="item trabalho1 col span_1_of_4" data-image="img/trabalho/g/img1.jpg" ></div>
+							<div class="item trabalho2 col span_1_of_4" data-image="img/trabalho/g/img2.jpg" ></div>
+							<div class="item trabalho3 col span_1_of_4" data-image="img/trabalho/g/img3.jpg" ></div>
+							<div class="item trabalho4 col span_1_of_4" data-image="img/trabalho/g/img4.jpg" ></div>
+							<div class="item trabalho5 col span_1_of_4" data-image="img/trabalho/g/img5.jpg" ></div>
+							<div class="item trabalho6 col span_1_of_4" data-image="img/trabalho/g/img6.jpg" ></div>
+							<div class="item trabalho7 col span_1_of_4" data-image="img/trabalho/g/img7.jpg" ></div>
+							<div class="item trabalho8 col span_1_of_4" data-image="img/trabalho/g/img8.jpg" ></div>
+							<div class="item trabalho9 col span_1_of_4" data-image="img/trabalho/g/img9.jpg" ></div>
+							<div class="item trabalho10 col span_1_of_4" data-image="img/trabalho/g/img10.jpg" ></div>
+						</div>
+				    </div>
+				    <div class="tab" data-tab="aventura">
+				        <div class="gallery group">
+				            <div class="item aventura1 col span_1_of_4" data-image="img/aventura/g/img1.jpg"></div>
+				            <div class="item aventura2 col span_1_of_4" data-image="img/aventura/g/img2.jpg"></div>
+				            <div class="item aventura3 col span_1_of_4" data-image="img/aventura/g/img3.jpg"></div>
+				            <div class="item aventura4 col span_1_of_4" data-image="img/aventura/g/img4.jpg"></div>
+				            <div class="item aventura5 col span_1_of_4" data-image="img/aventura/g/img5.jpg"></div>
+				            <div class="item aventura6 col span_1_of_4" data-image="img/aventura/g/img6.jpg"></div>
+				            <div class="item aventura7 col span_1_of_4" data-image="img/aventura/g/img7.jpg"></div>
+				            <div class="item aventura8 col span_1_of_4" data-image="img/aventura/g/img8.jpg"></div>
+				            <div class="item aventura9 col span_1_of_4" data-image="img/aventura/g/img9.jpg"></div>
+				            <div class="item aventura10 col span_1_of_4" data-image="img/aventura/g/img10.jpg"></div>
+				            <div class="item aventura11 col span_1_of_4" data-image="img/aventura/g/img11.jpg"></div>
+				            <div class="item aventura12 col span_1_of_4" data-image="img/aventura/g/img12.jpg"></div>
+				        </div>
+				    </div>
+				    <div class="tab" data-tab="acessorios">
+				        <div class="gallery group">
+				            <div class="item item_small acessorios1 col span_1_of_5" data-image="img/acessorios/g/img1.jpg" data-description="capas de chave em silicone"></div>
+				            <div class="item item_small acessorios2 col span_1_of_5" data-image="img/acessorios/g/img2.jpg" data-description="capas de chave em silicone" data-desc-color="FFF"></div>
+				            <div class="item item_small acessorios3 col span_1_of_5" data-image="img/acessorios/g/img3.jpg" data-description="capas de chave em silicone"></div>
+				            <div class="item item_small acessorios4 col span_1_of_5" data-image="img/acessorios/g/img4.jpg" data-description="capas de chave em silicone"></div>
+				            <div class="item item_small acessorios5 col span_1_of_5" data-image="img/acessorios/g/img5.jpg" data-description="capas de chave em silicone"></div>
+				            <div class="item item_small acessorios6 col span_1_of_5" data-image="img/acessorios/g/img6.jpg" data-description="capas de chave em silicone" data-desc-color="FFF"></div>
+				            <div class="item item_small acessorios7 col span_1_of_5" data-image="img/acessorios/g/img7.jpg" data-description="capas de chave em silicone" data-desc-color="FFF"></div>
+				            <div class="item item_small acessorios8 col span_1_of_5" data-image="img/acessorios/g/img8.jpg" data-description="capas de chave em silicone" data-desc-color="FFF"></div>
+				            <div class="item item_small acessorios9 col span_1_of_5" data-image="img/acessorios/g/img9.jpg" data-description="capas de chave em silicone"></div>
+				            <div class="item item_small acessorios10 col span_1_of_5" data-image="img/acessorios/g/img10.jpg" data-description="capas de chave em silicone"></div>
+				            <div class="item item_small acessorios11 col span_1_of_5" data-image="img/acessorios/g/img11.jpg" data-description="capas de chave em silicone"></div>
+				            <div class="item item_small acessorios12 col span_1_of_5" data-image="img/acessorios/g/img12.jpg" data-description="capas de chave em silicone"></div>
+				            <div class="item item_small acessorios13 col span_1_of_5" data-image="img/acessorios/g/img13.jpg" data-description="capas de chave em silicone"></div>
+				            <div class="item item_small acessorios14 col span_1_of_5" data-image="img/acessorios/g/img14.jpg" data-description="capas de chave em silicone" data-desc-color="FFF"></div>
+				            <div class="item item_small acessorios15 col span_1_of_5" data-image="img/acessorios/g/img15.jpg" data-description="capas de chave em silicone"></div>
+				            <div class="item item_small acessorios16 col span_1_of_5" data-image="img/acessorios/g/img16.jpg" data-description="capas de chave em silicone" data-desc-color="FFF"></div>
+				            <div class="item item_small acessorios17 col span_1_of_5" data-image="img/acessorios/g/img17.jpg" data-description="capas de chave em silicone" data-desc-color="FFF"></div>
+				            <div class="item item_small acessorios18 col span_1_of_5" data-image="img/acessorios/g/img18.jpg" data-description="capas de chave em silicone" data-desc-color="FFF"></div>
+				        </div>
+				    </div>
+				</div>
+			</div>
+		</section>
+		<section id="premios" class="slide premios">
+			<div class="premios_content">
+				<div class="sub-slide">
+					<div class="title">PRÊMIOS E COMPARATIVOS</div>
+					<div class="sub-title">FICOU TÃO IMPRESSIONADO COM A NOVA SAVEIRO QUE ACHOU QUE ELA MERECE UM PRÊMIO? BEM, VOCÊ NÃO FOI O ÚNICO.</div>
+					<div class="up-bar">
+						<div class="bar"></div>
+						<div class="back" onclick="window.premiosManager.back()"></div>
+						<div class="back-texto">VOLTAR</div>
+					</div>
+					<div class="separation-bar"></div>
+					<div class="super-container">
+						<div class="premio-auto container">
+							<div class="left-image"></div>
+							<div class="texto">
+								<span class="main-title">CONFRONTO INEVITÁVEL</span>
+								<br/>
+								<span class="source">Revista Auto Esporte - Edição Abril de 2016</span> 
+								<br/>
+								<span class="corpo">Antes mesmo de seu lançamento, a Revista Auto Esporte fez um comparativo detalhado entre as principais picapes do país. O resultado? A Nova Saveiro chegou na frente. Detalhes deste comparativo estão na edição de Abril da Revista Auto Esporte, dando a largada para os prêmios e comparativos que ainda estão por vir.</span>
+							</div>
+							<div class="tabela"></div>
+							<div class="separation-bar"></div>
+						</div>
+						<div class="premio-quatro container">
+							<div class="left-image"></div>
+							<div class="texto">
+								<span class="main-title">BRIGA PELA COROA</span>
+								<br/>
+								<span class="source">Revista Quatro Rodas - Edição Abril de 2016</span> 
+								<br/>
+								<span class="corpo">No comparativo da Quatro Rodas entre a Nova Saveiro e a Fiat Strada, novamente a picape da Volkswagen ficou em primeiro lugar em todos os quesitos. A matéria também ressalta atrativos como o design robusto e conectvidade da vencedora. O comparativo completo está na edição de Abril da Revista Quatro Rodas.</span>
+							</div>
+							<div class="tabela"></div>
+							<div class="separation-bar"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="robust-slide" class="slide robust-slide">
+			<div class="robust-content">
+				<div class="sub-slide">
+					<div class="up-bar">
+						<div class="bar"></div>
+						<div class="back" onclick="window.robustManager.back()"></div>
+						<div class="back-texto">VOLTAR</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="cross-slide" class="slide cross-slide">
+			<div class="cross-content">
+				<div class="sub-slide">
+					<div class="up-bar">
+						<div class="bar"></div>
+						<div class="back" onclick="window.crossManager.back()"></div>
+						<div class="back-texto">VOLTAR</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div class="menu-background"></div>
+	<div id="menu" class="menu">
+		<div class="primary">
+			<div class="item open">
+				<div class="icon"></div>
+				<div class="text">MENU</div>
+			</div>
+			<div class="interessado" onclick="vwleads('open', {'modelId': '6A56K6'});">ESTOU INTERESSADO</div>
+		</div>
+		<div class="secondary menu-mobile-transition">
+			<div class="item" onclick="window.stateMachine.askMove(window.stateMachine.Trigger.Home)"><!--
+			--><div class="icon-home"></div><div class="text">HOME</div></div>
+			<div class="item" onclick="window.stateMachine.askMove(window.stateMachine.Trigger.Identidade)"><!--
+			--><div class="icon-identidade"></div><div class="text">IDENTIDADE</div></div>
+			<div class="item" onclick="window.stateMachine.askMove(window.stateMachine.Trigger.Fatos)"><!--
+			--><div class="icon-fatos"></div><div class="text">FATOS</div></div>
+			<div class="item" onclick="window.stateMachine.askMove(window.stateMachine.Trigger.Versoes)"><!--
+			--><div class="icon-versoes"></div><div class="text">VERSÕES</div></div>
+			<div class="item" onclick="window.stateMachine.askMove(window.stateMachine.Trigger.Tour)"><!--
+			--><div class="icon-360"></div><div class="text">360°</div></div>
+			<div class="item" onclick="window.stateMachine.askMove(window.stateMachine.Trigger.Galeria)"><!--
+			--><div class="icon-galeria"></div><div class="text">GALERIA</div></div>
+			<div class="item" onclick="window.stateMachine.askMove(window.stateMachine.Trigger.Premios)"><!--
+			--><div class="icon-premios"></div><div class="text">PRÊMIOS</div></div>
+		</div>
+	</div>
+	<div id="saveiro_trabalho_interno" class="tour_interno_container" style="display:none;">
+		<div class="tour_interno">
+			<div class="cube">
+	            <div id="trabalho_front" class="front"></div>
+	            <div id="trabalho_right"  class="right"></div>
+	            <div id="trabalho_back" class="back"></div>
+	            <div id="trabalho_left" class="left"></div>
+	            <div id="trabalho_top" class="top"></div>
+	            <div id="trabalho_bottom" class="bottom"></div>
+	        </div>
+		</div>
+		<div class="close" onclick="window.cubeManager.setActive(false);">close</div>
+	</div>
+	<div id="saveiro_aventura_interno" class="tour_interno_container" style="display:none;">
+		<div class="tour_interno">
+			<div class="cube">
+	            <div id="aventura_front" class="front"></div>
+	            <div id="aventura_right"  class="right"></div>
+	            <div id="aventura_back" class="back"></div>
+	            <div id="aventura_left" class="left"></div>
+	            <div id="aventura_top" class="top"></div>
+	            <div id="aventura_bottom" class="bottom"></div>
+	        </div>
+		</div>
+		<div class="close" onclick="window.cubeManager.setActive(false);">close</div>
+	</div>
+	<div class="load load-transition">
+	  <div class="load-gear">
+	    <svg id="yellow" viewbox="0 0 100 100" fill="#ccc">
+	      <path d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z"></path>
+	    </svg>
+	  </div>
+	</div>
+	<div class="vw‐leads‐global"></div>
+</body>
+
+<!-- Fabio -->
+<!--Scripts-->
+<!--       -->
+<script src="js/fatos.js"></script>
+<script src="js/galeria.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){ $(".gallery .item").append('<div class="alpha_b" />') });
+</script>
+<!-- Fabio -->
+<!--Scripts-->
+<!--       -->
+<script type="text/javascript">
+	document.addEventListener("touchmove", function(e) { e.preventDefault() });
+	if (isMobile.apple.phone || isMobile.android.phone || isMobile.seven_inch) {
+		//alert('mobile!!!');
+		//alert(window.devicePixelRatio);
+	}
+
+</script>
+</html>
