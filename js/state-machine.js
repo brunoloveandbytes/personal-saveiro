@@ -219,6 +219,7 @@ $(document).ready(function() {
 										"stateMachine":this,
 										"name":"home",
 										"stage":4,
+										"welcomeFunction":function(){window.tagManager.homeTag();},
 										"transitions":[
 															new Transition({
 																"endStateName":"rotatedCar",
